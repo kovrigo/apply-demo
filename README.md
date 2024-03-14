@@ -22,7 +22,7 @@ Apply разработан на [Laravel](https://laravel.com/docs/5.8) и [Nova
 
 ## API
 
-Доступ к системе из внутренних скриптов, а также извне реализован посредством [EloquentJs](http://parsnick.github.io/eloquentjs/). Для понимания принципов работы необходимо ознакомиться с документацией по ссылке.
+Доступ к системе из внутренних скриптов, а также извне реализован посредством [EloquentJs](https://github.com/kovrigo/eloquentjs). Для понимания принципов работы необходимо ознакомиться с документацией по ссылке.
 
 `Eloquent.Post.find(1).then(post => console.log(post))`
 
