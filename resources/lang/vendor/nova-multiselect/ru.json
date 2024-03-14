@@ -1,0 +1,15 @@
+{
+  "novaMultiselect.maxElements": "Max of :max selected.",
+  "novaMultiselect.noResult": "Ничего не найдено.",
+  "novaMultiselect.noOptions": "Нет доступных опций для выбора.",
+  "novaMultiselect.limitText": "and :count more",
+  "novaMultiselect.selectLabel": "Нажмите Enter для выбора",
+  "novaMultiselect.selectGroupLabel": "Нажмите Enter для выбора группы",
+  "novaMultiselect.selectedLabel": "Выбрано",
+  "novaMultiselect.deselectLabel": "Нажмите Enter для удаления",
+  "novaMultiselect.deselectGroupLabel": "Нажмите Enter для удаления группы",
+  "novaMultiselect.placeholder": "Select option(s)",
+  "novaMultiselect.nItemsSelected": ":count выбрано",
+  "novaMultiselect.reorder": "Изменить порядок",
+  "novaMultiselect.doneReordering": "Сохранить"
+}

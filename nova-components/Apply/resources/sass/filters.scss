@@ -1,0 +1,138 @@
+div[dusk="filter-selector"] {
+    // Set fixed height to avoid "jumping" between selected and deselected modes
+    height: 35px;
+
+    button > div {
+        border: none;
+        background-color: $lightest-gray;
+        position: relative;
+        min-width: 40px;
+        
+        // Hide default filter icon
+        svg {
+            display: none;
+        }
+        
+        // Add custom icon to the right
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translatey(-50%);
+            width: 16px;
+            height: 16px;
+            background: url("/storage/filter.svg") no-repeat;
+        }
+        
+        // Selected filter
+        &.bg-primary {
+            border: none;
+
+            // Change icon to blue one
+            &:after {
+                background: url("/storage/filter-selected.svg") no-repeat;
+            }
+            
+            // Move count of selected filters to the left of icon
+            span {
+                color: $blue;
+                margin-left: 20px;
+                margin-right: 0;
+            }
+            
+        }
+        
+    }
+}
+// Filter dropdown
+div.z-50.open[x-placement] {
+
+    div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg {
+        box-shadow: none;
+        border-radius: 5px;
+        border: 1px solid $gray;
+        background-color: $white;
+
+        div.scroll-wrap.overflow-x-hidden.overflow-y-auto {
+            padding: 20px 20px 10px 20px;
+        }
+
+        // Reset filters
+        div.bg-30.border-b.border-60 {
+            border: none;
+            background-color: $white;
+
+            &:hover {
+                background-color: $white;
+                border: none;
+            }
+
+            button.py-2.w-full.block.text-xs.uppercase.tracking-wide.text-center.text-80.dim.font-bold {
+                color: $dark-gray;
+                text-decoration: none;
+                text-transform: lowercase;
+                background-color: $white;
+                margin-top: -10px;
+                margin-bottom: 10px;   
+                font-weight: normal;             
+
+                &:hover {
+                    color: $blue;
+                    text-decoration: none;
+                    background-color: $white;
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        // Filter label
+        h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 {
+            font-family: GoshaSans;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: $black;
+            background-color: $white;
+            padding: 0;
+            margin-bottom: 10px;
+
+            &:after {
+                content: ':';
+            }
+
+            // Filter
+            & + div.p-2 {
+                padding: 0;
+                margin-bottom: 30px;
+
+                // Simple select and Date
+                select.block.w-full.form-control-sm.form-select,
+                    input.w-full.form-control.form-input.form-input-bordered.flatpickr-input {
+                    background-color: $white;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-radius: 0;
+                    border-bottom: 1px solid $gray;
+                    text-transform: lowercase;
+                    color: $black;
+                    height: 2.25rem;
+                    padding: 0;
+
+                    @include placeholder {
+                        color: transparent;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

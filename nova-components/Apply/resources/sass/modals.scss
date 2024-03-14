@@ -1,0 +1,99 @@
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto {
+	background-color: rgba(31, 31, 31, 0.76);
+
+	// Confirm modal
+	form.bg-white.rounded-lg.shadow-lg.overflow-hidden {
+		width: 650px;
+		min-width: 650px;
+	}
+
+	// Modal
+	form.bg-white.rounded-lg.shadow-lg.overflow-hidden {
+		border-radius: 10px;
+		background-color: $lightest-gray;
+
+		// Header
+		h2.border-b.border-40.py-8.px-8.text-90.font-normal.text-xl, h2.mb-6.text-90.font-normal.text-xl {
+			font-family: GoshaSans;
+			font-weight: normal;
+			font-size: 28px;
+			letter-spacing: 0.035em;
+			text-transform: uppercase;
+			color: $blue!important;
+			padding-bottom: 0;
+			padding-top: 30px
+		}
+
+		// Confirm delete header
+		div.p-8 > h2.mb-6.text-90.font-normal.text-xl {
+			padding-top: 0;
+		}
+
+		// Confirm text
+		h2.border-b.border-40.py-8.px-8.text-90.font-normal.text-xl + p.text-80.px-8.my-8,
+			h2.mb-6.text-90.font-normal.text-xl + p.text-80.leading-normal {
+			color: $black;
+			text-transform: lowercase;
+
+		}
+
+		// Footer
+		div.bg-30.px-6.py-3.flex {
+			background-color: $lightest-gray;
+			padding-bottom: 30px;
+			padding-top: 30px;
+
+			// Cancel button
+			button[dusk='cancel-action-button'].btn.btn-link.dim.cursor-pointer.text-80.ml-auto.mr-6,
+				button[dusk='cancel-delete-button'].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link,
+				button[data-testid='cancel-button'].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link {
+				background-color: $lightest-gray;
+
+				&:hover {
+					background-color: $blue;
+				}
+
+			}
+
+		}
+
+		// Field
+		div.action div.flex.border-b.border-40 {
+			border: none;
+
+			// Label
+			div.w-1\/5.px-8.pt-6, div.w-1\/5.px-8.py-6 {
+				padding-top: 20px;
+				padding-bottom: 0;
+				width: 100%;
+
+				label.inline-block.text-80.pt-2.leading-tight {
+					color: $black;
+					text-transform: uppercase;
+					font-weight: bold;
+					font-family: GoshaSans;
+					font-size: 16px;
+				    line-height: 19px;
+				    letter-spacing: 0.05em;
+				    padding-top: 0;
+
+					// Required
+					span.text-danger.text-sm {
+						color: $blue;
+					}
+
+				}
+
+				// Value
+				+ div.py-6.px-8.w-1\/2, +div.py-6.px-8.w-full {
+					padding-bottom: 0;
+					padding-top: 20px;
+				}
+
+			}
+
+		}
+
+	}
+
+}

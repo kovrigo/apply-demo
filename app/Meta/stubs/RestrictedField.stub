@@ -1,0 +1,22 @@
+    public function get<attribute>Attribute($value)
+    {
+    	if (apply()->authenticated) {
+	    	if (apply()->isHost) {
+	    		return <host_hidden>;
+	    	} else {
+	        	return <tenant_hidden>;
+	    	}
+    	}
+        return $value;
+    }
+
+    public function set<attribute>Attribute($value)
+    {
+    	if (apply()->authenticated) {
+	    	if (apply()->isHost) {
+                    <host_readonly>
+	    	} else {
+                    <tenant_readonly>
+	    	}
+    	}
+    }

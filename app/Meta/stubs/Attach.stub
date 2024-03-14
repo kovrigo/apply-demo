@@ -1,0 +1,5 @@
+    
+    public function attach<relatedModelClass>(User $user, <modelClass> $model, $relatedModel)
+    {
+        return $this->policy->can('attach<relatedModelClass>', $model, $relatedModel);
+    }

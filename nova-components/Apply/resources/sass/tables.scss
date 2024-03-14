@@ -1,0 +1,341 @@
+// Lens table
+div[dusk$="-lens-component"] {
+
+	// Lens name
+    h1.mb-3.text-90.font-normal.text-2xl {
+    	font-size: 1.5rem;
+    	max-width: initial;
+    	margin-bottom: 10px;
+    }
+
+}
+
+// Index/lens table
+div[dusk$="-index-component"], div[dusk$="-lens-component"] {
+
+	// Mass delete button
+	div[dusk="delete-menu"] {
+		// TODO: hide for now
+		display: none;
+	}
+
+	// Resource name
+    h1 {
+        margin-bottom: 0;
+        max-width: 800px;
+    }	
+
+	// Box with table, filters and paginator
+    .card:not(.card-panel) {
+    	
+        // Select all checkbox
+        div.flex.items-center div.px-3 {
+        	padding-left: 0;
+        	padding-right: 0;
+
+			div[dusk="select-all-dropdown"] {
+				margin-left: 0;
+				margin-right: 0;
+				
+				// Remove paddings
+				div.dropdown-trigger.px-2 {
+	            	padding-left: 0;
+	            	padding-right: 0;
+				}
+
+			}
+
+        }
+
+    }
+
+    // Resource search and create button
+    h1 + div.flex {
+    	// Move the whole thing up to the same level as resource name
+        transform: translateY(-100%);
+        min-height: 37px;
+        
+        // Move search down
+        div.relative.h-9.flex-no-shrink.mb-6 {
+            margin-bottom: 0;
+            position: absolute;
+            top: 200%;
+            transform: translatey(12px);
+            right: 65px;
+
+			// Hide default search icon
+		    svg {
+		        display: none;
+		    }
+
+		    // Add custom search icon
+		    &:after {
+		        content: "";
+		        display: block;
+		        position: absolute;
+		        right: 3px;
+		        top: 50%;
+		        transform: translateY(-50%);
+		        width: 20px;
+		        height: 24px;
+		        background: url("/storage/search-gray.svg") no-repeat;
+		    }	    
+
+		    // Style input
+			input[dusk="search"].form-search {
+			    background-color: transparent;
+			    border-bottom: 1px solid $gray;
+			    border-radius: 0;
+			    box-shadow: none;
+			    padding-right: 2.75rem;
+			    padding-left: .75rem;
+
+			    &:focus {
+			    	border-bottom: 1px solid $gray!important;
+			    }
+
+			    @include placeholder {
+			        color: transparent;
+			    }
+
+			}
+
+        }
+
+        // Create button
+        div.w-full.flex.items-center.mb-6 {
+        	margin-bottom: 0;
+        }
+        // Create button on detail relations
+        div.w-full.flex.items-center div.flex-no-shrink.ml-auto.mb-6 {
+        	margin-bottom: 0;
+        }
+        
+    }    
+
+	// Box with table, filters and paginator
+    .card:not(.card-panel) {
+        box-shadow: none;
+        border-radius: 0;
+        background-color: $light-gray;
+        border: none;
+        
+        div.flex.items-center.py-3.border-b.border-50 {
+            background-color: $lightest-gray;
+            border-radius: 30px;
+            padding-left: 22px;
+            padding-right: 15px;
+            min-height: 56px;
+            border: none;
+
+            // Lenses selector
+            div.flex.items-center.ml-auto.px-3 div.v-popover.bg-30.hover\:bg-40.mr-3.rounded {
+            	background-color: $lightest-gray;
+			    position: absolute;
+			    right: 370px;
+            }
+
+			// Action selector
+			div.flex.items-center.ml-auto.px-3 > div:not(.v-popover) {
+			    position: absolute;
+			    left: 70px;
+
+				@include action-styles;
+			    
+			}
+
+        }
+        
+        // Not found
+        div.relative {
+
+		    div.flex.justify-center.items-center.px-6.py-8 {
+				padding-bottom: 90px;
+				padding-top: 180px;
+			    background-color: $lightest-gray;
+			    border-radius: 30px;
+			    margin-top: 40px;				
+		    }
+
+		    // Icon and text "not found"
+		    div.flex.justify-center.items-center.px-6.py-8 div.text-center {
+
+		    	svg {
+		    		display: none;
+		    	}
+
+			    // Add custom search icon
+			    h3:before {
+			        content: "";
+			        display: block;
+			        position: absolute;
+			        width: 57px;
+			        height: 57px;
+			        background: url("/storage/not-found.svg") no-repeat;
+				    left: 50%;
+				    transform: translateX(-50%) translateY(-70px);
+				    padding-right: 16px;
+				    box-sizing: content-box;			        
+			    }	    
+
+			    h3 {
+			    	color: #A9A9A9;
+			    	font-size: 20px;
+			    	font-family: GoshaSans;
+			    	text-transform: lowercase;
+			    }
+
+		    }
+
+        }
+
+    }
+
+	.table {
+
+		// Headers
+		thead tr {
+			height: 45px;
+
+			th {
+			    background-color: $light-gray;
+			    border: none;
+
+			    // Sort button
+			    svg path.fill-60 {
+			        fill: $gray;
+			    }
+			    // Selected sort button
+			    svg path.fill-80 {
+			        fill: $blue;
+			    }
+
+			}
+
+		    // Add left padding to the first column
+		    th:nth-of-type(2) {
+		    	//padding-left: 50px;
+		    }
+
+		    // Add right padding to the last column
+		    th:last-of-type {
+		    	padding-left: 30px;
+		    }
+
+		}
+
+		// Body
+		tbody {
+			background-color: $lightest-gray;
+
+			// Row hover
+			tr:hover {
+				background-color: $light-blue;
+
+				// Checkboxes
+				input[type=checkbox]:checked:after {
+					background: url("/storage/checked-blue.svg") no-repeat;
+				}
+
+				input[type=checkbox]:not(:checked):after {
+					background: url("/storage/unchecked-blue.svg") no-repeat;
+				}
+
+			}
+
+			// Rounded corners
+		    //tr:first-of-type td:nth-of-type(2) {
+		    tr:first-of-type td:nth-of-type(1) {
+				border-top-left-radius: 30px!important;
+		    }
+		    tr:first-of-type td:last-of-type {
+				border-top-right-radius: 30px!important;
+		    }    
+		    //tr:last-of-type td:nth-of-type(2) {
+		    tr:last-of-type td:nth-of-type(1) {
+				border-bottom-left-radius: 30px!important;
+		    }
+		    tr:last-of-type td:last-of-type {
+				border-bottom-right-radius: 30px!important;
+		    }    
+
+		    // Remove top and bottom borders
+		    tr:first-of-type td {
+		    	border-top: none;
+		    }
+		    tr:last-of-type td {
+		    	border-bottom: none;
+		    }
+
+		    // Make rows taller with paddings
+		    td {
+		    	padding-bottom: 20px;
+		        padding-top: 20px;
+		        border-color: $light-gray;
+		        //text-align: center;
+		    }
+
+		    // Add left padding to the first column
+		    td:nth-of-type(2) {
+		    	//padding-left: 50px;
+		    }
+
+		    // Add right padding to the last column
+		    td:last-of-type {
+		    	padding-left: 30px;
+		    }
+
+		}		
+
+	}
+
+	// Select row checkboxes
+	td.w-16 div.flex.items-center {
+		justify-content: center;
+
+		// Sortable controls
+		div.flex.items-center.ml-4 {
+			margin-left: 10px;
+
+			svg {
+				margin-left: 0;
+			}
+
+		}
+
+	}
+
+}
+
+// Relationship tables
+.relationship-tabs-panel div[dusk$="-index-component"] {
+
+    // Resource search and create button
+    h1 + div.flex {
+	    position: absolute;
+	    width: 300px;
+	    top: 0;
+	    height: 56px;
+	    right: 0;
+	    transform: initial;
+	    margin: 0!important;
+	    padding: 0!important;
+
+    	// Search
+    	div.relative.h-9.flex-no-shrink.mb-6 {
+    		right: 400px;
+    		top: 0;
+    	}
+
+        // Create button
+        div.w-full.flex.items-center.mb-6 {
+        	
+        }
+
+        + div.card > div.flex {
+			width: 710px;
+        }
+
+    }
+
+}

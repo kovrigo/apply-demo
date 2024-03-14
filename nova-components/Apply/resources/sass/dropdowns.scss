@@ -1,0 +1,55 @@
+div.z-50.open div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg,
+	div.overflow-hidden.absolute.rounded-lg.shadow-lg.w-full.mt-2.max-h-search.overflow-y-auto {
+	box-shadow: none;
+	border-radius: 5px;
+	border: 1px solid $gray;
+	background-color: $white;
+
+	// Options group in the list
+	h3.text-xs.uppercase.tracking-wide.text-80.bg-40.py-2.px-3 {
+        font-size: 10px;
+        font-family: GoshaSans;
+        color: $dark-gray;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: $white;
+        padding: 12px;
+	}
+
+	// Not found in global search
+	h3.text-xs.uppercase.tracking-wide.text-80.bg-40.py-4.px-3 {
+		text-transform: lowercase;
+		font-size: 16px;
+		color: $black;
+		background-color: $white;
+		padding: 12px;
+    	min-height: 40px;
+    	font-weight: normal;
+    	letter-spacing: 0.05em;
+    	font-family: Roboto;
+	}
+
+	ul li a {
+		text-transform: lowercase;
+		font-size: 16px;
+		color: $black;
+		background-color: $white;
+		padding: 12px;
+    	min-height: 40px;
+
+		&:hover {
+			background-color: $light-blue;
+		}
+
+	}
+
+	// Checkboxes
+	input[type=checkbox]:checked:after {
+		background: url("/storage/checked-white.svg") no-repeat;
+	}
+
+	input[type=checkbox]:not(:checked):after {
+		background: url("/storage/unchecked-white.svg") no-repeat;
+	}
+
+}

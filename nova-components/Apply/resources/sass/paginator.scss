@@ -1,0 +1,56 @@
+div[per-page] {
+    margin-top: 20px;
+    background-color: $light-gray;
+    
+    // Label "1-3 of 3"
+    span {
+        color: $text-gray;
+        font-size: 13px;
+        letter-spacing: 0.05em;                
+    }
+    
+    button {
+        font-weight: normal;
+        text-transform: lowercase;
+        position: relative;
+        color: $text-gray;
+        opacity: 1!important;
+        font-size: 13px;
+        letter-spacing: 0.05em;        
+    }
+    
+    button[rel="prev"] {
+        padding-left: 70px;
+        margin-left: 40px;
+    }
+    
+    button[rel="next"] {
+        padding-right: 80px;
+        margin-right: 40px;
+    }
+    
+    button[rel="prev"]:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translatey(-50%);
+        width: 68px;
+        height: 8px;
+        background: url("/storage/arrow-left.svg") no-repeat;        
+    }
+
+    button[rel="next"]:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translatey(-50%);
+        width: 68px;
+        height: 8px;
+        background: url("/storage/arrow-right.svg") no-repeat;        
+    }    
+    
+}

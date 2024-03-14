@@ -1,0 +1,15 @@
+<?php
+
+namespace App;
+
+use App\Settings\Model;
+
+class <modelClass>State extends Model
+{
+	use \App\Relations\<modelClass>State;
+	use \App\Tenancy\Traits\RespectsTenancy;
+	use \App\Translatable\<modelClass>State;
+	use \App\Restrictions\<modelClass>State;
+
+}
+

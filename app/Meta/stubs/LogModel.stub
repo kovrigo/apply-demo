@@ -1,0 +1,14 @@
+<?php
+
+namespace App;
+
+use App\Settings\Model;
+
+class <modelClass>Log extends Model
+{
+	use \App\Relations\<modelClass>Log;
+	use \App\Tenancy\Traits\RespectsTenancy;
+	use \App\Restrictions\<modelClass>Log;
+
+}
+

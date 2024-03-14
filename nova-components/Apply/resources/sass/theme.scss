@@ -1,0 +1,119 @@
+$blue-dark: #3887D0;
+$blue: #409AEE;
+$light-blue: #DCE7F0;
+$black: #1F1F1F;
+$dark-gray: #A1A1A1;
+$gray: #B6B6B6;
+$light-gray: #DEDEDE;
+$lighter-gray: #EDEDED;
+$lightest-gray: #EEEEEE;
+$text-gray: #656565;
+$white: #FFFFFF;
+
+$sidebar-width: 294px;
+
+@import 'vue-multiselect.min.css';
+@import 'mixins';
+@import 'actions';
+@import 'fonts';
+@import 'sidebar';
+@import 'content';
+@import 'topbar';
+@import 'tables';
+@import 'buttons';
+@import 'filters';
+@import 'paginator';
+@import 'inline-actions';
+@import 'detail';
+@import 'tabs';
+@import 'form';
+@import 'multiselect';
+@import 'workflow';
+@import 'cards';
+@import 'modals';
+@import 'dropdowns';
+@import 'media-library';
+@import 'trumbowyg';
+@import 'settings';
+@import 'pill-filter';
+@import 'google-autocomplete';
+@import 'login';
+@import 'trix';
+@import 'color';
+
+// Hide bubbles in the bottom-right corner
+.toasted-container {
+    //display: none!important;
+}
+
+// Remove all outlines
+*:focus, *:active {
+    outline:none!important;
+    box-shadow:none!important;
+}
+
+// Hide pseudo clear button in search fields
+*::-webkit-search-cancel-button{
+    display: none; 
+}
+*::-ms-clear{
+   margin-right:20px
+}
+
+// Hide tooltips for now (style them later)
+.tooltip {
+    display: none!important;
+}
+
+// Remove top margin of help text below field, because it appeard even if help text is empty
+// and we don't use help texts anyway
+.help-text.help-text {
+    margin-top: 0!important;
+}
+
+.checkbox[disabled] {
+	background-color: var(--40);
+}
+
+.checkbox:checked[disabled] {
+	border-color: var(--60);
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 16 16' fill='%23bbb' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3E%3C/svg%3E");
+}
+
+html {
+    background: linear-gradient(350.4deg, #1F1F1F 9.69%, #282828 97.69%);
+}
+
+body .main-container {
+    background: linear-gradient(350.4deg, #1F1F1F 9.69%, #282828 97.69%);
+}
+
+/************************* Global colors **************************/
+:root {
+    --transparent: transparent;
+    --black: #1F1F1F;
+    --white: white;
+    --white-50: rgba(255, 255, 255, 0.5);
+    --danger: #e74444;
+    --success: #21b978;
+    --warning: #ffeb3b;
+    --info: #03a9f4;
+    --primary: #409AEE;
+    --primary-dark: #297ec0;
+    --primary-70: rgba(64, 153, 222, 0.7);
+    --primary-50: rgba(64, 153, 222, 0.5);
+    --primary-30: rgba(64, 153, 222, 0.3);
+    --primary-10: rgba(64, 153, 222, 0.1);
+    --logo: #252d37;
+    --sidebar-icon: #b3c1d1;
+    /*
+    --20: #f6fbff;
+    --30: #f4f7fa;
+    --40: #eef1f4;
+    --50: #e3e7eb;
+    --60: #bacad6;
+    --70: #b3b9bf;
+    --80: #7c858e;
+    --90: #252d37;
+    --90-half: rgba(40, 54, 61, 0.5);*/
+}

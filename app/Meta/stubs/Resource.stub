@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Nova;
+
+use App\Settings\CustomizedResource;
+use App\Workflows\WorkflowableResource;
+use Laravel\Nova\Http\Requests\NovaRequest;
+use Illuminate\Http\Request;
+<uses>
+
+class <modelClass> extends <extends>
+{
+	<traits>
+
+    public static $model = 'App\<modelClass>';
+
+    public static $search = [<fields>];
+
+    <options>
+
+}

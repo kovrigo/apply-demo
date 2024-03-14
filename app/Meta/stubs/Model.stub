@@ -1,0 +1,13 @@
+<?php
+
+namespace App;
+
+use App\Settings\Model;
+<uses>
+
+class <modelClass> extends Model <implements>
+{
+	<traits>
+    
+}
+

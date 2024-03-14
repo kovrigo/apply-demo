@@ -1,0 +1,42 @@
+
+Eloquent('Job', function (modelClass) {
+
+    return class extends modelClass {
+
+        static endpoint = "<endpoint>";
+        static scopes = [<scopes>];
+        static dates = [<dates>];
+
+        promote() {
+            return this.connection.sendRequest(this.id + '/promote', 'get');
+        }
+
+        stopPromotion() {
+            return this.connection.sendRequest(this.id + '/stop-promotion', 'get');
+        }
+
+        publish() {
+            return this.connection.sendRequest(this.id + '/publish', 'get');
+        }
+
+        unpublish() {
+            return this.connection.sendRequest(this.id + '/unpublish', 'get');
+        }
+
+        reserve(amount) {
+            return this.connection.sendRequest(this.id + '/reserve?amount=' + amount, 'get');
+        }
+
+        reservableAmount() {
+            return this.connection.sendRequest(this.id + '/reservable-amount', 'get');
+        }
+
+        refund() {
+            return this.connection.sendRequest(this.id + '/refund', 'get');
+        }    
+
+    };
+
+});
+<globalObject> = Eloquent.Job;
+

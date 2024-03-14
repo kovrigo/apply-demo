@@ -1,0 +1,5 @@
+    
+    public function <modelClassCamelPlural>()
+    {
+        return $this->belongsToMany('App\<modelClass>');
+    }    

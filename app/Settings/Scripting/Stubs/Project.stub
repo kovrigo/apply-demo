@@ -1,0 +1,18 @@
+
+Eloquent('Project', function (modelClass) {
+
+    return class extends modelClass {
+
+        static endpoint = "<endpoint>";
+        static scopes = [<scopes>];
+        static dates = [<dates>];
+
+        copy() {
+            return this.connection.sendRequest(this.id + '/copy', 'get');
+        }
+
+    };
+
+});
+<globalObject> = Eloquent.Project;
+

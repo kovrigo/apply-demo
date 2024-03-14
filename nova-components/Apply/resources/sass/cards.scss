@@ -1,0 +1,58 @@
+.card.card-panel {
+    background-color: $lightest-gray;
+    box-shadow: none;
+    border-radius: 30px;
+
+    // Loading card
+    div.rounded-lg.pin.z-50.bg-white {
+	    background-color: $lightest-gray;
+	    box-shadow: none;
+	    border-radius: 30px;    	
+    }
+
+    // Card name
+    h3.mr-3.text-base.text-80.font-bold, h3.flex.mb-3.text-base.text-80.font-bold {
+    	color: $dark-gray;
+    	font-size: 16px;
+    	font-weight: normal;
+    	text-transform: lowercase;
+
+    	// Total in chart diagram (hide for now)
+    	span.ml-auto.font-semibold.text-70.text-sm {
+    		display: none;
+    	}
+
+    }
+
+    // Chart
+    div.vertical-center.rounded-b-lg.ct-chart.mr-4 {
+    	right: 0!important;
+    	bottom: 0;
+    }
+
+    // Chart legend
+    h3.flex.mb-3.text-base.text-80.font-bold + div.overflow-hidden.overflow-y-auto.max-h-90px {
+    	max-height: 70px;
+    	width: calc(100% - 90px);
+    }
+
+    // Metric value
+    p.flex.items-center.text-4xl.mb-4 {
+		font-family: GoshaSans;
+		font-weight: bold;
+		color: $black;
+		font-size: 28px;
+
+		&:after {
+			content: '₽';
+			margin-left: 10px;
+		}
+
+    }
+
+    // Old values (hide for now)
+	p.flex.items-center.text-4xl.mb-4 + div.flex.items-center {
+		display: none;
+	}    
+
+}

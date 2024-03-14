@@ -1,0 +1,28 @@
+{
+  "businessHours.days.monday": "Monday",
+  "businessHours.days.tuesday": "Tuesday",
+  "businessHours.days.wednesday": "Wednesday",
+  "businessHours.days.thursday": "Thursday",
+  "businessHours.days.friday": "Friday",
+  "businessHours.days.saturday": "Saturday",
+  "businessHours.days.sunday": "Sunday",
+
+  "businessHours.switchOpen": "Open",
+  "businessHours.switchClosed": "Closed",
+  "businessHours.placeholderOpens": "Opens",
+  "businessHours.placeholderCloses": "Closes",
+  "businessHours.addHours": "Add hours",
+
+  "businessHours.open.invalidInput": "Please enter an opening time in the 12 hour format (ie. 08:00 AM). You may also enter \"24 hours\".",
+  "businessHours.open.greaterThanNext": "Please enter an opening time that is before the closing time.",
+  "businessHours.open.lessThanPrevious": "Please enter an opening time that is after the previous closing time.",
+  "businessHours.open.midnightNotLast": "Midnight can only be selected for the day's last closing time.",
+
+  "businessHours.close.invalidInput": "Please enter a closing time in the 12 hour format (ie. 05:00 PM). You may also enter \"24 hours\" or \"Midnight\".",
+  "businessHours.close.greaterThanNext": "Please enter a closing time that is after the opening time.",
+  "businessHours.close.lessThanPrevious": "Please enter a closing time that is before the next opening time.",
+  "businessHours.close.midnightNotLast": "Midnight can only be selected for the day's last closing time.",
+
+  "businessHours.t24hours": "24 hours",
+  "businessHours.midnight": "Midnight"
+}

@@ -1,0 +1,10 @@
+/.vagrant
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+/storage/app/public/[0-9]*
+/storage/medialibrary
+/backups

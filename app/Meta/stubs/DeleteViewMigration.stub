@@ -1,0 +1,43 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class DummyClass extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {        
+        DB::statement($this->deleteView('<table>'));
+        if (<workflowable>) {
+            // Workflow
+            DB::statement($this->deleteView('<modelClassSnake>_workflows'));
+            // Workflow - UserProfile
+            DB::statement($this->deleteView('<modelClassSnake>_workflow_user_profile'));
+            // State
+            DB::statement($this->deleteView('<modelClassSnake>_states'));
+            // Log
+            DB::statement($this->deleteView('<modelClassSnake>_logs'));
+        }
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        
+    }
+
+    public function deleteView($table)
+    {
+        return 'DROP VIEW IF EXISTS _' . $table;
+    }
+}

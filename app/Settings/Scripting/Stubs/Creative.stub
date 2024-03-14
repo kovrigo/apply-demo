@@ -1,0 +1,26 @@
+
+Eloquent('Creative', function (modelClass) {
+
+    return class extends modelClass {
+
+        static endpoint = "<endpoint>";
+        static scopes = [<scopes>];
+        static dates = [<dates>];
+
+	    promote() {
+	        return this.connection.sendRequest(this.id + '/promote', 'get');
+	    }
+
+	    stopPromotion() {
+	        return this.connection.sendRequest(this.id + '/stop-promotion', 'get');
+	    }
+
+	    refresh() {
+	        return this.connection.sendRequest(this.id + '/refresh', 'get');
+	    }
+
+    };
+
+});
+<globalObject> = Eloquent.Creative;
+

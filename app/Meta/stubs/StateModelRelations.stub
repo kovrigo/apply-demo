@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Relations;
+
+trait <modelClass>State
+{
+
+    public function <modelClassPlural>()
+    {
+        return $this->hasMany('App\<modelClass>');
+    }
+
+}

@@ -1,0 +1,13 @@
+    
+    public function <ability>(User $user)
+    {
+    	if (apply()->authenticated) {
+	    	if (apply()->isHost) {
+                return <host_permission>;
+	    	} else {
+                return <tenant_permission>;
+	    	}
+    	}
+        return parent::<ability>($user);
+    }
+    

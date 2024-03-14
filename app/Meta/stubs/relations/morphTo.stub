@@ -1,0 +1,5 @@
+    
+    public function <fieldName>()
+    {
+        return $this->morphTo()->withTrashed();
+    }    

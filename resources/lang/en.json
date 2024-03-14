@@ -1,0 +1,16 @@
+{
+	"Other": "Other",
+	"male": "Male",
+	"female": "Female",
+	"debit": "Debit",
+	"credit": "Credit",
+	"refund": "Refund",
+	"main": "Main",
+	"draft": "Draft",
+	"opened": "Opened",
+	"closed": "Closed",
+	"Action details": "Action details",
+	"Copy record": "Copy record",
+	"conversion": "Conversion",
+	"cost": "Cost"
+}

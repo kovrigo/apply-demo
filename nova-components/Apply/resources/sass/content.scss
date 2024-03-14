@@ -1,0 +1,17 @@
+$content-radius: 40px;
+
+// Content with top bar
+.content {
+	max-width: calc(100vw - #{$sidebar-width});
+    overflow: hidden;
+    border-top-left-radius: $content-radius;
+    border-bottom-left-radius: $content-radius;
+    min-height: 100vh;
+    background-color: $light-gray;
+
+    // Content
+    div[data-testid="content"] {
+    	padding-top: 0;
+    }
+
+}

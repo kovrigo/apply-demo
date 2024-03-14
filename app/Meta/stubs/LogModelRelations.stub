@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Relations;
+
+trait <modelClass>Log
+{
+
+    public function <modelClassCamel>State()
+    {
+        return $this->belongsTo('App\<modelClass>State');
+    }
+
+    public function <modelClassCamel>()
+    {
+        return $this->belongsTo('App\<modelClass>');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }    
+
+    public function state()
+    {
+        return $this-><modelClassCamel>State();
+    }
+
+}

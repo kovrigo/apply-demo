@@ -1,0 +1,57 @@
+.sidebar {
+    min-width: $sidebar-width;
+    min-height: 100vh;
+
+    .logo {
+        width: 200px;
+        margin-top: 44px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+    }
+
+    .navigation {
+        padding-bottom: 30px;
+        
+        .navigation-group {
+            font-size: 14px;
+            text-transform: lowercase;
+            
+            .group-label {
+                margin-top: 21px;
+                margin-bottom: 7px;
+                margin-left: 50px;
+                color: #666666;
+            }
+            
+            .navigation-link {
+                align-items: center;
+                padding-left: 50px;
+                padding-right: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;                
+                
+                a {
+                    color: white;
+                    font-size: 16px;
+                    text-transform: lowercase;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $blue;
+                    }
+
+                }
+
+                &.selected {
+                    background-color: $black;
+                    border-right: 8px solid $blue;
+                }
+                
+            }
+            
+        }
+        
+    }
+
+}

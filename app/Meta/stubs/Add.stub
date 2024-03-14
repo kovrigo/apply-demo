@@ -1,0 +1,5 @@
+    
+    public function add<relatedModelClass>(User $user, $model)
+    {
+        return $this->policy->can('add<relatedModelClass>', $model);
+    }

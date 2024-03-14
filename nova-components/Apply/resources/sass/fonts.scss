@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: 
+        url('/kovrigo/apply/fonts/Roboto-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    src: 
+        url('/kovrigo/apply/fonts/Roboto-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'GoshaSans';
+    font-style: normal;
+    font-weight: normal;
+    src: 
+        url('/kovrigo/apply/fonts/GoshaSans-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'GoshaSans';
+    font-style: normal;
+    font-weight: bold;
+    src: 
+        url('/kovrigo/apply/fonts/GoshaSans-Bold.otf') format("opentype");
+}
+
+.text-90 {
+    color: $black!important;
+}
+
+html.font-sans {
+    font-family: Roboto;
+    font-size: 16px;
+    color: $black;
+
+    // Table header
+    .table th {
+        font-family: GoshaSans;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $black;
+    }
+
+    // Resource name
+    h1.text-90.font-normal.text-2xl {
+        font-family: GoshaSans;
+        font-size: 36px;
+        line-height: 43px;
+        letter-spacing: 0.035em;        
+        text-transform: uppercase;
+        font-weight: normal;
+        color: $blue!important;
+    }
+
+    // Field label
+    h4.font-normal.text-80 {
+        font-family: GoshaSans;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $black;
+        font-weight: bold;
+    }
+
+}

@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Restrictions;
+
+trait <modelClass>
+{
+
+    public function getHidden()
+    {
+    	if (apply()->authenticated) {
+	    	if (apply()->isHost) {
+	    		return [<host_hidden>];
+	    	}
+	        return [<tenant_hidden>];
+    	}
+    	return [];
+    }
+
+    public function getGuarded()
+    {
+    	if (apply()->authenticated) {
+	    	if (apply()->isHost) {
+	    		return [<host_readonly>];
+	    	}
+	        return [<tenant_readonly>];
+    	}
+    	return [];
+    }
+
+<fields>
+
+}

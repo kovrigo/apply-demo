@@ -1,0 +1,21 @@
+.trumbowyg-box.trumbowyg-editor-visible.trumbowyg {
+	background-color: white;
+
+	div.trumbowyg-button-pane {
+		background-color: $lighter-gray;
+		z-index: 0;
+	}
+
+}
+
+.trumbowyg-details .markdown.leading-normal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid $gray;
+
+    & > a.cursor-pointer.dim.inline-block.text-primary.font-bold.mt-6 {
+    	margin-top: 20px;
+    }
+
+}

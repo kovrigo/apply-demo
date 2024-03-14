@@ -1,0 +1,13 @@
+div.color-input + input:focus {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: $gray;
+}
+
+div.color-input {
+    border-color: $gray;
+}
+
+div.vc-compact:focus, div.vc-compact:active {
+    box-shadow: 0 2px 10px rgb(0 0 0 / 12%), 0 2px 5px rgb(0 0 0 / 16%)!important;
+}

@@ -1,0 +1,35 @@
+.pill-filter {
+
+    .pill {
+        text-transform: lowercase;
+        border: 1px solid $dark-gray;
+        background-color: $white;
+        border-radius: 30px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: $black;
+        cursor: pointer;
+
+        &.active {
+            border: 1px solid $blue;
+            background-color: $blue;
+            color: $white;
+        }
+
+    }
+
+    .expand-collapse {
+        font-size: 12px;
+        color: $dark-gray;
+        text-transform: lowercase;
+        text-decoration: none;
+
+        &:hover {
+            color: $blue;
+            text-decoration: none;
+        }
+
+    }
+
+}

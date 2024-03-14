@@ -1,0 +1,58 @@
+.trix-details .markdown.leading-normal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid $gray;
+
+    figure {
+        text-decoration: none;
+
+        a {
+            text-decoration: none;
+        }
+
+        figcaption {
+            color: $blue;
+            font-weight: 800;
+        }
+
+    }
+
+}
+
+.trix-form {
+
+    trix-toolbar {
+
+        .trix-button-group {
+            border-radius: 5px;
+            border-bottom-color: $gray;
+            border-color: $gray;
+            overflow: hidden;
+
+            .trix-button {
+                border: none;
+                color: black;
+
+                &.trix-active {
+                    background-color: $light-blue;
+                }
+
+            }
+
+        }
+
+    }
+
+    trix-editor {
+        background-color: white;
+        padding: 20px;        
+    }
+
+}
+
+.trix-details {
+    a.cursor-pointer.dim.inline-block.text-primary.font-bold.mt-6 {
+        margin-top: 20px;
+    }
+}

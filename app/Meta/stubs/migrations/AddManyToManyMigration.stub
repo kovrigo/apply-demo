@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class DummyClass extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('<modelClassASnake>_<modelClassBSnake>', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('<modelClassASnake>_id')->nullable();
+            $table->unsignedBigInteger('<modelClassBSnake>_id')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        
+    }
+}

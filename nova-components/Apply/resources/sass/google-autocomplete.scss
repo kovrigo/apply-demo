@@ -1,0 +1,28 @@
+.pac-container {
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid $gray;;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    &:after {
+        display: none;
+    }
+    
+    .pac-item {
+        padding-left: 15px;
+        padding-right: 15px;
+        
+        &:hover {
+            background-color: $light-blue;;
+        }
+        
+    }
+    
+    .pac-item:first-of-type {
+        border-top: none;
+    }
+    
+}

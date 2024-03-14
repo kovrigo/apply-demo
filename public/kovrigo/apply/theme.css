@@ -1,0 +1,2589 @@
+fieldset[disabled] .multiselect{pointer-events:none}.multiselect__spinner{position:absolute;right:1px;top:1px;width:48px;height:35px;background:#fff;display:block}.multiselect__spinner:after,.multiselect__spinner:before{position:absolute;content:"";top:50%;left:50%;margin:-8px 0 0 -8px;width:16px;height:16px;border-radius:100%;border-color:#41b883 transparent transparent;border-style:solid;border-width:2px;-webkit-box-shadow:0 0 0 1px transparent;box-shadow:0 0 0 1px transparent}.multiselect__spinner:before{-webkit-animation:a 2.4s cubic-bezier(.41,.26,.2,.62);animation:a 2.4s cubic-bezier(.41,.26,.2,.62);-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.multiselect__spinner:after{-webkit-animation:a 2.4s cubic-bezier(.51,.09,.21,.8);animation:a 2.4s cubic-bezier(.51,.09,.21,.8);-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.multiselect__loading-enter-active,.multiselect__loading-leave-active{-webkit-transition:opacity .4s ease-in-out;transition:opacity .4s ease-in-out;opacity:1}.multiselect__loading-enter,.multiselect__loading-leave-active{opacity:0}.multiselect,.multiselect__input,.multiselect__single{font-family:inherit;font-size:16px;-ms-touch-action:manipulation;touch-action:manipulation}.multiselect{-webkit-box-sizing:content-box;box-sizing:content-box;display:block;position:relative;width:100%;min-height:40px;text-align:left;color:#35495e}.multiselect *{-webkit-box-sizing:border-box;box-sizing:border-box}.multiselect:focus{outline:none}.multiselect--disabled{opacity:.6}.multiselect--active{z-index:1}.multiselect--active:not(.multiselect--above) .multiselect__current,.multiselect--active:not(.multiselect--above) .multiselect__input,.multiselect--active:not(.multiselect--above) .multiselect__tags{border-bottom-left-radius:0;border-bottom-right-radius:0}.multiselect--active .multiselect__select{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.multiselect--above.multiselect--active .multiselect__current,.multiselect--above.multiselect--active .multiselect__input,.multiselect--above.multiselect--active .multiselect__tags{border-top-left-radius:0;border-top-right-radius:0}.multiselect__input,.multiselect__single{position:relative;display:inline-block;min-height:20px;line-height:20px;border:none;border-radius:5px;background:#fff;padding:0 0 0 5px;width:100%;-webkit-transition:border .1s ease;transition:border .1s ease;-webkit-box-sizing:border-box;box-sizing:border-box;margin-bottom:8px;vertical-align:top}.multiselect__input::-webkit-input-placeholder{color:#35495e}.multiselect__input:-ms-input-placeholder{color:#35495e}.multiselect__input::-moz-placeholder{color:#35495e}.multiselect__input::-ms-input-placeholder{color:#35495e}.multiselect__input::placeholder{color:#35495e}.multiselect__tag~.multiselect__input,.multiselect__tag~.multiselect__single{width:auto}.multiselect__input:hover,.multiselect__single:hover{border-color:#cfcfcf}.multiselect__input:focus,.multiselect__single:focus{border-color:#a8a8a8;outline:none}.multiselect__single{padding-left:5px;margin-bottom:8px}.multiselect__tags-wrap{display:inline}.multiselect__tags{min-height:40px;display:block;padding:8px 40px 0 8px;border-radius:5px;border:1px solid #e8e8e8;background:#fff;font-size:14px}.multiselect__tag{position:relative;display:inline-block;padding:4px 26px 4px 10px;border-radius:5px;margin-right:10px;color:#fff;line-height:1;background:#41b883;margin-bottom:5px;white-space:nowrap;overflow:hidden;max-width:100%;text-overflow:ellipsis}.multiselect__tag-icon{cursor:pointer;margin-left:7px;position:absolute;right:0;top:0;bottom:0;font-weight:700;font-style:normal;width:22px;text-align:center;line-height:22px;-webkit-transition:all .2s ease;transition:all .2s ease;border-radius:5px}.multiselect__tag-icon:after{content:"\D7";color:#266d4d;font-size:14px}.multiselect__tag-icon:focus,.multiselect__tag-icon:hover{background:#369a6e}.multiselect__tag-icon:focus:after,.multiselect__tag-icon:hover:after{color:#fff}.multiselect__current{min-height:40px;overflow:hidden;padding:8px 12px 0;padding-right:30px;white-space:nowrap;border-radius:5px;border:1px solid #e8e8e8}.multiselect__current,.multiselect__select{line-height:16px;-webkit-box-sizing:border-box;box-sizing:border-box;display:block;margin:0;text-decoration:none;cursor:pointer}.multiselect__select{position:absolute;width:40px;height:38px;right:1px;top:1px;padding:4px 8px;text-align:center;-webkit-transition:-webkit-transform .2s ease;transition:-webkit-transform .2s ease;transition:transform .2s ease;transition:transform .2s ease, -webkit-transform .2s ease}.multiselect__select:before{position:relative;right:0;top:65%;color:#999;margin-top:4px;border-style:solid;border-width:5px 5px 0;border-color:#999 transparent transparent;content:""}.multiselect__placeholder{color:#adadad;display:inline-block;margin-bottom:10px;padding-top:2px}.multiselect--active .multiselect__placeholder{display:none}.multiselect__content-wrapper{position:absolute;display:block;background:#fff;width:100%;max-height:240px;overflow:auto;border:1px solid #e8e8e8;border-top:none;border-bottom-left-radius:5px;border-bottom-right-radius:5px;z-index:1;-webkit-overflow-scrolling:touch}.multiselect__content{list-style:none;display:inline-block;padding:0;margin:0;min-width:100%;vertical-align:top}.multiselect--above .multiselect__content-wrapper{bottom:100%;border-bottom-left-radius:0;border-bottom-right-radius:0;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom:none;border-top:1px solid #e8e8e8}.multiselect__content::webkit-scrollbar{display:none}.multiselect__element{display:block}.multiselect__option{display:block;padding:12px;min-height:40px;line-height:16px;text-decoration:none;text-transform:none;vertical-align:middle;position:relative;cursor:pointer;white-space:nowrap}.multiselect__option:after{top:0;right:0;position:absolute;line-height:40px;padding-right:12px;padding-left:20px;font-size:13px}.multiselect__option--highlight{background:#41b883;outline:none;color:#fff}.multiselect__option--highlight:after{content:attr(data-select);background:#41b883;color:#fff}.multiselect__option--selected{background:#f3f3f3;color:#35495e;font-weight:700}.multiselect__option--selected:after{content:attr(data-selected);color:silver}.multiselect__option--selected.multiselect__option--highlight{background:#ff6a6a;color:#fff}.multiselect__option--selected.multiselect__option--highlight:after{background:#ff6a6a;content:attr(data-deselect);color:#fff}.multiselect--disabled{background:#ededed;pointer-events:none}.multiselect--disabled .multiselect__current,.multiselect--disabled .multiselect__select,.multiselect__option--disabled{background:#ededed;color:#a6a6a6}.multiselect__option--disabled{cursor:text;pointer-events:none}.multiselect__option--group{background:#ededed;color:#35495e}.multiselect__option--group.multiselect__option--highlight{background:#35495e;color:#fff}.multiselect__option--group.multiselect__option--highlight:after{background:#35495e}.multiselect__option--disabled.multiselect__option--highlight{background:#dedede}.multiselect__option--group-selected.multiselect__option--highlight{background:#ff6a6a;color:#fff}.multiselect__option--group-selected.multiselect__option--highlight:after{background:#ff6a6a;content:attr(data-deselect);color:#fff}.multiselect-enter-active,.multiselect-leave-active{-webkit-transition:all .15s ease;transition:all .15s ease}.multiselect-enter,.multiselect-leave-active{opacity:0}.multiselect__strong{margin-bottom:8px;line-height:20px;display:inline-block;vertical-align:top}[dir=rtl] .multiselect{text-align:right}[dir=rtl] .multiselect__select{right:auto;left:1px}[dir=rtl] .multiselect__tags{padding:8px 8px 0 40px}[dir=rtl] .multiselect__content{text-align:right}[dir=rtl] .multiselect__option:after{right:auto;left:0}[dir=rtl] .multiselect__clear{right:auto;left:12px}[dir=rtl] .multiselect__spinner{right:auto;left:1px}@-webkit-keyframes a{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(2turn);transform:rotate(2turn)}}@keyframes a{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(2turn);transform:rotate(2turn)}}@charset "UTF-8";
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/kovrigo/apply/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/kovrigo/apply/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GoshaSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/kovrigo/apply/fonts/GoshaSans-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GoshaSans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/kovrigo/apply/fonts/GoshaSans-Bold.otf") format("opentype");
+}
+
+.text-90 {
+  color: #1F1F1F !important;
+}
+
+html.font-sans {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #1F1F1F;
+}
+
+html.font-sans .table th {
+  font-family: GoshaSans;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1F1F1F;
+}
+
+html.font-sans h1.text-90.font-normal.text-2xl {
+  font-family: GoshaSans;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #409AEE !important;
+}
+
+html.font-sans h4.font-normal.text-80 {
+  font-family: GoshaSans;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1F1F1F;
+  font-weight: bold;
+}
+
+.sidebar {
+  min-width: 294px;
+  min-height: 100vh;
+}
+
+.sidebar .logo {
+  width: 200px;
+  margin-top: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+
+.sidebar .navigation {
+  padding-bottom: 30px;
+}
+
+.sidebar .navigation .navigation-group {
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.sidebar .navigation .navigation-group .group-label {
+  margin-top: 21px;
+  margin-bottom: 7px;
+  margin-left: 50px;
+  color: #666666;
+}
+
+.sidebar .navigation .navigation-group .navigation-link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebar .navigation .navigation-group .navigation-link a {
+  color: white;
+  font-size: 16px;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.sidebar .navigation .navigation-group .navigation-link a:hover {
+  color: #409AEE;
+}
+
+.sidebar .navigation .navigation-group .navigation-link.selected {
+  background-color: #1F1F1F;
+  border-right: 8px solid #409AEE;
+}
+
+.content {
+  max-width: calc(100vw - 294px);
+  overflow: hidden;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  min-height: 100vh;
+  background-color: #DEDEDE;
+}
+
+.content div[data-testid=content] {
+  padding-top: 0;
+}
+
+.topbar {
+  min-height: 120px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.topbar div[dusk=global-search-component] svg {
+  display: none;
+}
+
+.topbar div[dusk=global-search-component]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  height: 24px;
+  background: url("/storage/search.svg") no-repeat;
+}
+
+.topbar div[dusk=global-search-component] input[dusk=global-search].form-global-search {
+  background-color: transparent;
+  border-bottom: 1px solid #B6B6B6;
+  border-radius: 0;
+}
+
+.topbar div[dusk=global-search-component] input[dusk=global-search].form-global-search:focus {
+  border-bottom: 1px solid #B6B6B6 !important;
+}
+
+.topbar div[dusk=global-search-component] input[dusk=global-search].form-global-search::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.topbar div[dusk=global-search-component] input[dusk=global-search].form-global-search:-moz-placeholder {
+  color: transparent;
+}
+
+.topbar div[dusk=global-search-component] input[dusk=global-search].form-global-search::-moz-placeholder {
+  color: transparent;
+}
+
+.topbar div[dusk=global-search-component] input[dusk=global-search].form-global-search:-ms-input-placeholder {
+  color: transparent;
+}
+
+.topbar .balance .balance-label {
+  color: #A1A1A1;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+
+.topbar .balance .balance-value,
+.topbar .balance .balance-currency {
+  color: #1F1F1F;
+  font-family: GoshaSans;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+.topbar .balance .balance-value {
+  margin-left: 7px;
+}
+
+.topbar .balance .balance-currency {
+  margin-left: 3px;
+  margin-right: 60px;
+}
+
+div[dusk$=-lens-component] h1.mb-3.text-90.font-normal.text-2xl {
+  font-size: 1.5rem;
+  max-width: initial;
+  margin-bottom: 10px;
+}
+
+div[dusk$=-index-component] div[dusk=delete-menu],
+div[dusk$=-lens-component] div[dusk=delete-menu] {
+  display: none;
+}
+
+div[dusk$=-index-component] h1,
+div[dusk$=-lens-component] h1 {
+  margin-bottom: 0;
+  max-width: 800px;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.flex.items-center div.px-3,
+div[dusk$=-lens-component] .card:not(.card-panel) div.flex.items-center div.px-3 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.flex.items-center div.px-3 div[dusk=select-all-dropdown],
+div[dusk$=-lens-component] .card:not(.card-panel) div.flex.items-center div.px-3 div[dusk=select-all-dropdown] {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.flex.items-center div.px-3 div[dusk=select-all-dropdown] div.dropdown-trigger.px-2,
+div[dusk$=-lens-component] .card:not(.card-panel) div.flex.items-center div.px-3 div[dusk=select-all-dropdown] div.dropdown-trigger.px-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div[dusk$=-index-component] h1 + div.flex,
+div[dusk$=-lens-component] h1 + div.flex {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  min-height: 37px;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6,
+div[dusk$=-lens-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 {
+  margin-bottom: 0;
+  position: absolute;
+  top: 200%;
+  -webkit-transform: translatey(12px);
+          transform: translatey(12px);
+  right: 65px;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 svg,
+div[dusk$=-lens-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 svg {
+  display: none;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6:after,
+div[dusk$=-lens-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  height: 24px;
+  background: url("/storage/search-gray.svg") no-repeat;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search,
+div[dusk$=-lens-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search {
+  background-color: transparent;
+  border-bottom: 1px solid #B6B6B6;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-right: 2.75rem;
+  padding-left: 0.75rem;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search:focus,
+div[dusk$=-lens-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search:focus {
+  border-bottom: 1px solid #B6B6B6 !important;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search::-webkit-input-placeholder,
+div[dusk$=-lens-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search::-webkit-input-placeholder {
+  color: transparent;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search:-moz-placeholder,
+div[dusk$=-lens-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search:-moz-placeholder {
+  color: transparent;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search::-moz-placeholder,
+div[dusk$=-lens-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search::-moz-placeholder {
+  color: transparent;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search:-ms-input-placeholder,
+div[dusk$=-lens-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 input[dusk=search].form-search:-ms-input-placeholder {
+  color: transparent;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.w-full.flex.items-center.mb-6,
+div[dusk$=-lens-component] h1 + div.flex div.w-full.flex.items-center.mb-6 {
+  margin-bottom: 0;
+}
+
+div[dusk$=-index-component] h1 + div.flex div.w-full.flex.items-center div.flex-no-shrink.ml-auto.mb-6,
+div[dusk$=-lens-component] h1 + div.flex div.w-full.flex.items-center div.flex-no-shrink.ml-auto.mb-6 {
+  margin-bottom: 0;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel),
+div[dusk$=-lens-component] .card:not(.card-panel) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  background-color: #DEDEDE;
+  border: none;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50,
+div[dusk$=-lens-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 {
+  background-color: #EEEEEE;
+  border-radius: 30px;
+  padding-left: 22px;
+  padding-right: 15px;
+  min-height: 56px;
+  border: none;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 div.v-popover.bg-30.hover\:bg-40.mr-3.rounded,
+div[dusk$=-lens-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 div.v-popover.bg-30.hover\:bg-40.mr-3.rounded {
+  background-color: #EEEEEE;
+  position: absolute;
+  right: 370px;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 > div:not(.v-popover),
+div[dusk$=-lens-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 > div:not(.v-popover) {
+  position: absolute;
+  left: 70px;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 > div:not(.v-popover) div.flex.items-center.mr-3 select.form-control.form-select.mr-2,
+div[dusk$=-lens-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 > div:not(.v-popover) div.flex.items-center.mr-3 select.form-control.form-select.mr-2 {
+  background-color: transparent;
+  color: black;
+  border: none;
+  margin-right: 0;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 > div:not(.v-popover) div.flex.items-center.mr-3 button.btn.btn-default.btn-primary.flex.items-center.justify-center.px-3,
+div[dusk$=-lens-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 > div:not(.v-popover) div.flex.items-center.mr-3 button.btn.btn-default.btn-primary.flex.items-center.justify-center.px-3 {
+  min-width: initial;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 > div:not(.v-popover) div.flex.items-center.mr-3 button.btn.btn-default.btn-primary.flex.items-center.justify-center.px-3:hover,
+div[dusk$=-lens-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 > div:not(.v-popover) div.flex.items-center.mr-3 button.btn.btn-default.btn-primary.flex.items-center.justify-center.px-3:hover {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 > div:not(.v-popover) div.flex.items-center.mr-3 button.btn.btn-default.btn-primary.flex.items-center.justify-center.px-3 svg,
+div[dusk$=-lens-component] .card:not(.card-panel) div.flex.items-center.py-3.border-b.border-50 div.flex.items-center.ml-auto.px-3 > div:not(.v-popover) div.flex.items-center.mr-3 button.btn.btn-default.btn-primary.flex.items-center.justify-center.px-3 svg {
+  fill: #409AEE;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.relative div.flex.justify-center.items-center.px-6.py-8,
+div[dusk$=-lens-component] .card:not(.card-panel) div.relative div.flex.justify-center.items-center.px-6.py-8 {
+  padding-bottom: 90px;
+  padding-top: 180px;
+  background-color: #EEEEEE;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.relative div.flex.justify-center.items-center.px-6.py-8 div.text-center svg,
+div[dusk$=-lens-component] .card:not(.card-panel) div.relative div.flex.justify-center.items-center.px-6.py-8 div.text-center svg {
+  display: none;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.relative div.flex.justify-center.items-center.px-6.py-8 div.text-center h3:before,
+div[dusk$=-lens-component] .card:not(.card-panel) div.relative div.flex.justify-center.items-center.px-6.py-8 div.text-center h3:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  background: url("/storage/not-found.svg") no-repeat;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-70px);
+          transform: translateX(-50%) translateY(-70px);
+  padding-right: 16px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+div[dusk$=-index-component] .card:not(.card-panel) div.relative div.flex.justify-center.items-center.px-6.py-8 div.text-center h3,
+div[dusk$=-lens-component] .card:not(.card-panel) div.relative div.flex.justify-center.items-center.px-6.py-8 div.text-center h3 {
+  color: #A9A9A9;
+  font-size: 20px;
+  font-family: GoshaSans;
+  text-transform: lowercase;
+}
+
+div[dusk$=-index-component] .table thead tr,
+div[dusk$=-lens-component] .table thead tr {
+  height: 45px;
+}
+
+div[dusk$=-index-component] .table thead tr th,
+div[dusk$=-lens-component] .table thead tr th {
+  background-color: #DEDEDE;
+  border: none;
+}
+
+div[dusk$=-index-component] .table thead tr th svg path.fill-60,
+div[dusk$=-lens-component] .table thead tr th svg path.fill-60 {
+  fill: #B6B6B6;
+}
+
+div[dusk$=-index-component] .table thead tr th svg path.fill-80,
+div[dusk$=-lens-component] .table thead tr th svg path.fill-80 {
+  fill: #409AEE;
+}
+
+div[dusk$=-index-component] .table thead tr th:last-of-type,
+div[dusk$=-lens-component] .table thead tr th:last-of-type {
+  padding-left: 30px;
+}
+
+div[dusk$=-index-component] .table tbody,
+div[dusk$=-lens-component] .table tbody {
+  background-color: #EEEEEE;
+}
+
+div[dusk$=-index-component] .table tbody tr:hover,
+div[dusk$=-lens-component] .table tbody tr:hover {
+  background-color: #DCE7F0;
+}
+
+div[dusk$=-index-component] .table tbody tr:hover input[type=checkbox]:checked:after,
+div[dusk$=-lens-component] .table tbody tr:hover input[type=checkbox]:checked:after {
+  background: url("/storage/checked-blue.svg") no-repeat;
+}
+
+div[dusk$=-index-component] .table tbody tr:hover input[type=checkbox]:not(:checked):after,
+div[dusk$=-lens-component] .table tbody tr:hover input[type=checkbox]:not(:checked):after {
+  background: url("/storage/unchecked-blue.svg") no-repeat;
+}
+
+div[dusk$=-index-component] .table tbody tr:first-of-type td:nth-of-type(1),
+div[dusk$=-lens-component] .table tbody tr:first-of-type td:nth-of-type(1) {
+  border-top-left-radius: 30px !important;
+}
+
+div[dusk$=-index-component] .table tbody tr:first-of-type td:last-of-type,
+div[dusk$=-lens-component] .table tbody tr:first-of-type td:last-of-type {
+  border-top-right-radius: 30px !important;
+}
+
+div[dusk$=-index-component] .table tbody tr:last-of-type td:nth-of-type(1),
+div[dusk$=-lens-component] .table tbody tr:last-of-type td:nth-of-type(1) {
+  border-bottom-left-radius: 30px !important;
+}
+
+div[dusk$=-index-component] .table tbody tr:last-of-type td:last-of-type,
+div[dusk$=-lens-component] .table tbody tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 30px !important;
+}
+
+div[dusk$=-index-component] .table tbody tr:first-of-type td,
+div[dusk$=-lens-component] .table tbody tr:first-of-type td {
+  border-top: none;
+}
+
+div[dusk$=-index-component] .table tbody tr:last-of-type td,
+div[dusk$=-lens-component] .table tbody tr:last-of-type td {
+  border-bottom: none;
+}
+
+div[dusk$=-index-component] .table tbody td,
+div[dusk$=-lens-component] .table tbody td {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-color: #DEDEDE;
+}
+
+div[dusk$=-index-component] .table tbody td:last-of-type,
+div[dusk$=-lens-component] .table tbody td:last-of-type {
+  padding-left: 30px;
+}
+
+div[dusk$=-index-component] td.w-16 div.flex.items-center,
+div[dusk$=-lens-component] td.w-16 div.flex.items-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div[dusk$=-index-component] td.w-16 div.flex.items-center div.flex.items-center.ml-4,
+div[dusk$=-lens-component] td.w-16 div.flex.items-center div.flex.items-center.ml-4 {
+  margin-left: 10px;
+}
+
+div[dusk$=-index-component] td.w-16 div.flex.items-center div.flex.items-center.ml-4 svg,
+div[dusk$=-lens-component] td.w-16 div.flex.items-center div.flex.items-center.ml-4 svg {
+  margin-left: 0;
+}
+
+.relationship-tabs-panel div[dusk$=-index-component] h1 + div.flex {
+  position: absolute;
+  width: 300px;
+  top: 0;
+  height: 56px;
+  right: 0;
+  -webkit-transform: initial;
+          transform: initial;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.relationship-tabs-panel div[dusk$=-index-component] h1 + div.flex div.relative.h-9.flex-no-shrink.mb-6 {
+  right: 400px;
+  top: 0;
+}
+
+.relationship-tabs-panel div[dusk$=-index-component] h1 + div.flex + div.card > div.flex {
+  width: 710px;
+}
+
+a.btn.btn-default,
+button.btn.btn-default {
+  padding-top: 10px;
+  padding-bottom: 13px;
+  border-radius: 50px;
+  min-width: 225px;
+  text-align: center;
+  line-height: 100%;
+  height: auto;
+  text-transform: lowercase;
+  background-color: #409AEE;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  font-weight: normal;
+  border: 1px solid #409AEE;
+  color: #FFFFFF;
+  min-height: 41px;
+}
+
+a.btn.btn-default:hover,
+button.btn.btn-default:hover {
+  background-color: #3887D0 !important;
+  border: 1px solid #3887D0 !important;
+}
+
+a.btn.btn-default span,
+button.btn.btn-default span {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:not(.btn):hover {
+  color: #3887D0;
+  opacity: 1 !important;
+}
+
+a.btn.btn-default.btn-primary[dusk=create-button],
+a.btn.btn-default.btn-primary[dusk=attach-button] {
+  border: 1px solid #1F1F1F;
+  background-color: #DEDEDE;
+  color: #1F1F1F;
+}
+
+a.btn.btn-default.btn-primary[dusk=create-button]:hover,
+a.btn.btn-default.btn-primary[dusk=attach-button]:hover {
+  background-color: #409AEE;
+  border: 1px solid #409AEE;
+  color: white;
+}
+
+a.btn.btn-sm.btn-outline.inline-flex.items-center[dusk=create-button],
+a.btn.btn-sm.btn-outline.inline-flex.items-center[dusk=attach-button] {
+  display: none;
+}
+
+a.btn.btn-default.btn-icon.bg-primary[data-testid=edit-resource] {
+  position: relative;
+  min-width: initial;
+  background: none;
+  border: none;
+  opacity: 1 !important;
+}
+
+a.btn.btn-default.btn-icon.bg-primary[data-testid=edit-resource] svg {
+  display: none;
+}
+
+a.btn.btn-default.btn-icon.bg-primary[data-testid=edit-resource]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url("/storage/edit-light.svg") no-repeat;
+}
+
+a.btn.btn-default.btn-icon.bg-primary[data-testid=edit-resource]:hover:after {
+  background: url("/storage/edit.svg") no-repeat;
+  opacity: 1 !important;
+}
+
+a.btn.btn-default.btn-icon.bg-primary[data-testid=edit-resource]:hover {
+  background-color: initial !important;
+  border: none !important;
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-delete-modal-button] {
+  position: relative;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0 0 0 17px;
+  opacity: 1 !important;
+  min-width: initial;
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-delete-modal-button] svg {
+  display: none;
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-delete-modal-button]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  left: 0;
+  width: 17px;
+  height: 18px;
+  background: url("/storage/remove-light.svg") no-repeat;
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-delete-modal-button]:hover:after {
+  background: url("/storage/remove.svg") no-repeat;
+  border: none !important;
+  opacity: 1 !important;
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-delete-modal-button]:hover {
+  background-color: initial !important;
+  border: none !important;
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-restore-modal-button],
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-force-delete-modal-button] {
+  background: none;
+  border: none;
+  min-width: initial;
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-restore-modal-button] svg,
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-force-delete-modal-button] svg {
+  color: #A1A1A1;
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-restore-modal-button]:hover,
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-force-delete-modal-button]:hover {
+  background: none !important;
+  border: none !important;
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-restore-modal-button]:hover svg,
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-force-delete-modal-button]:hover svg {
+  color: #656565;
+  opacity: 1;
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk=open-force-delete-modal-button] {
+  margin-right: 4px;
+}
+
+a.btn.btn-link.dim.cursor-pointer.text-80.ml-auto.mr-6,
+button[dusk=cancel-action-button].btn.btn-link.dim.cursor-pointer.text-80.ml-auto.mr-6,
+button[dusk=cancel-delete-button].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link,
+button[data-testid=cancel-button].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link {
+  padding-top: 10px;
+  padding-bottom: 13px;
+  border-radius: 50px;
+  min-width: 225px;
+  text-align: center;
+  line-height: 100%;
+  height: auto;
+  text-transform: lowercase;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  font-weight: normal;
+  border: 1px solid #1F1F1F;
+  background-color: #DEDEDE;
+  color: #1F1F1F;
+}
+
+a.btn.btn-link.dim.cursor-pointer.text-80.ml-auto.mr-6:hover,
+button[dusk=cancel-action-button].btn.btn-link.dim.cursor-pointer.text-80.ml-auto.mr-6:hover,
+button[dusk=cancel-delete-button].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link:hover,
+button[data-testid=cancel-button].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link:hover {
+  background-color: #409AEE !important;
+  border: 1px solid #409AEE !important;
+  color: white;
+  opacity: 1;
+}
+
+button:disabled {
+  opacity: 1 !important;
+}
+
+.custom-input {
+  border-bottom: 1px solid #B6B6B6;
+  background-color: #EEEEEE;
+  height: 2.25rem;
+}
+
+.custom-textarea {
+  background-color: #EEEEEE;
+  border: 1px solid #B6B6B6;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=checkbox] {
+  position: relative;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: 22px;
+  height: 22px;
+  background: url("/storage/checked.svg") no-repeat;
+  cursor: pointer;
+}
+
+input[type=checkbox]:not(:checked):after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: 22px;
+  height: 22px;
+  background: url("/storage/unchecked.svg") no-repeat;
+  cursor: pointer;
+}
+
+input[type=checkbox]:active {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+input[type=password],
+input[type=password]:active,
+input[type=password]:focus {
+  border-bottom: 1px solid #B6B6B6;
+  background-color: #EEEEEE;
+  height: 2.25rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  color: #1F1F1F;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+input[type=password]::-webkit-input-placeholder,
+input[type=password]:active::-webkit-input-placeholder,
+input[type=password]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input[type=password]:-moz-placeholder,
+input[type=password]:active:-moz-placeholder,
+input[type=password]:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input[type=password]::-moz-placeholder,
+input[type=password]:active::-moz-placeholder,
+input[type=password]:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input[type=password]:-ms-input-placeholder,
+input[type=password]:active:-ms-input-placeholder,
+input[type=password]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.mini-tab {
+  font-family: GoshaSans;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #A1A1A1;
+}
+
+.mini-tab.active {
+  color: #409AEE;
+  border-bottom: 2px solid #409AEE;
+}
+
+.mini-tab-content .label {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #A1A1A1;
+  margin-bottom: 10px;
+}
+
+.mini-tab-content .separator {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #1F1F1F;
+}
+
+div.help-text.error-text.mt-2.text-danger {
+  font-style: normal;
+}
+
+input.flatpickr-input,
+input.flatpickr-input.active,
+input.flatpickr-input:focus {
+  border-bottom: 1px solid #B6B6B6;
+  background-color: #EEEEEE;
+  height: 2.25rem;
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #1F1F1F;
+  padding: initial;
+}
+
+div[dusk=filter-selector] {
+  height: 35px;
+}
+
+div[dusk=filter-selector] button > div {
+  border: none;
+  background-color: #EEEEEE;
+  position: relative;
+  min-width: 40px;
+}
+
+div[dusk=filter-selector] button > div svg {
+  display: none;
+}
+
+div[dusk=filter-selector] button > div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  width: 16px;
+  height: 16px;
+  background: url("/storage/filter.svg") no-repeat;
+}
+
+div[dusk=filter-selector] button > div.bg-primary {
+  border: none;
+}
+
+div[dusk=filter-selector] button > div.bg-primary:after {
+  background: url("/storage/filter-selected.svg") no-repeat;
+}
+
+div[dusk=filter-selector] button > div.bg-primary span {
+  color: #409AEE;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid #B6B6B6;
+  background-color: #FFFFFF;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg div.scroll-wrap.overflow-x-hidden.overflow-y-auto {
+  padding: 20px 20px 10px 20px;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg div.bg-30.border-b.border-60 {
+  border: none;
+  background-color: #FFFFFF;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg div.bg-30.border-b.border-60:hover {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg div.bg-30.border-b.border-60 button.py-2.w-full.block.text-xs.uppercase.tracking-wide.text-center.text-80.dim.font-bold {
+  color: #A1A1A1;
+  text-decoration: none;
+  text-transform: lowercase;
+  background-color: #FFFFFF;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg div.bg-30.border-b.border-60 button.py-2.w-full.block.text-xs.uppercase.tracking-wide.text-center.text-80.dim.font-bold:hover {
+  color: #409AEE;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  opacity: 1;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 {
+  font-family: GoshaSans;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1F1F1F;
+  background-color: #FFFFFF;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3:after {
+  content: ":";
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 select.block.w-full.form-control-sm.form-select,
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 input.w-full.form-control.form-input.form-input-bordered.flatpickr-input {
+  background-color: #FFFFFF;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  border-bottom: 1px solid #B6B6B6;
+  text-transform: lowercase;
+  color: #1F1F1F;
+  height: 2.25rem;
+  padding: 0;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 select.block.w-full.form-control-sm.form-select::-webkit-input-placeholder,
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 input.w-full.form-control.form-input.form-input-bordered.flatpickr-input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 select.block.w-full.form-control-sm.form-select:-moz-placeholder,
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 input.w-full.form-control.form-input.form-input-bordered.flatpickr-input:-moz-placeholder {
+  color: transparent;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 select.block.w-full.form-control-sm.form-select::-moz-placeholder,
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 input.w-full.form-control.form-input.form-input-bordered.flatpickr-input::-moz-placeholder {
+  color: transparent;
+}
+
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 select.block.w-full.form-control-sm.form-select:-ms-input-placeholder,
+div.z-50.open[x-placement] div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-sm.uppercase.tracking-wide.text-80.bg-30.p-3 + div.p-2 input.w-full.form-control.form-input.form-input-bordered.flatpickr-input:-ms-input-placeholder {
+  color: transparent;
+}
+
+div[per-page] {
+  margin-top: 20px;
+  background-color: #DEDEDE;
+}
+
+div[per-page] span {
+  color: #656565;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+
+div[per-page] button {
+  font-weight: normal;
+  text-transform: lowercase;
+  position: relative;
+  color: #656565;
+  opacity: 1 !important;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+
+div[per-page] button[rel=prev] {
+  padding-left: 70px;
+  margin-left: 40px;
+}
+
+div[per-page] button[rel=next] {
+  padding-right: 80px;
+  margin-right: 40px;
+}
+
+div[per-page] button[rel=prev]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  width: 68px;
+  height: 8px;
+  background: url("/storage/arrow-left.svg") no-repeat;
+}
+
+div[per-page] button[rel=next]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  width: 68px;
+  height: 8px;
+  background: url("/storage/arrow-right.svg") no-repeat;
+}
+
+a[dusk$=-edit-button],
+a[dusk$=-edit-attached-button] {
+  position: relative;
+  background-color: initial !important;
+  border: none !important;
+}
+
+a[dusk$=-edit-button] svg,
+a[dusk$=-edit-attached-button] svg {
+  opacity: 0;
+}
+
+a[dusk$=-edit-button]:after,
+a[dusk$=-edit-attached-button]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url("/storage/edit-light.svg") no-repeat;
+}
+
+a[dusk$=-edit-button]:hover:after,
+a[dusk$=-edit-attached-button]:hover:after {
+  background: url("/storage/edit.svg") no-repeat;
+}
+
+button[dusk$=-delete-button]:not([data-testid=cancel-button]) {
+  position: relative;
+  background-color: initial !important;
+  border: none !important;
+}
+
+button[dusk$=-delete-button]:not([data-testid=cancel-button]) svg {
+  opacity: 0;
+}
+
+button[dusk$=-delete-button]:not([data-testid=cancel-button]):after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  left: 0;
+  width: 17px;
+  height: 18px;
+  background: url("/storage/remove-light.svg") no-repeat;
+}
+
+button[dusk$=-delete-button]:not([data-testid=cancel-button]):hover:after {
+  background: url("/storage/remove.svg") no-repeat;
+}
+
+a[dusk$=-view-button] {
+  display: none;
+}
+
+button[dusk$=-restore-button] {
+  color: #A1A1A1;
+}
+
+button[dusk$=-restore-button]:hover {
+  color: #656565;
+}
+
+div[dusk$=-detail-component] h1 + div.ml-3.w-full.flex.items-center > div.ml-3 div.flex.items-center.mr-3 select.form-control.form-select.mr-2 {
+  background-color: transparent;
+  color: black;
+  border: none;
+  margin-right: 0;
+}
+
+div[dusk$=-detail-component] h1 + div.ml-3.w-full.flex.items-center > div.ml-3 div.flex.items-center.mr-3 button.btn.btn-default.btn-primary.flex.items-center.justify-center.px-3 {
+  min-width: initial;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+div[dusk$=-detail-component] h1 + div.ml-3.w-full.flex.items-center > div.ml-3 div.flex.items-center.mr-3 button.btn.btn-default.btn-primary.flex.items-center.justify-center.px-3:hover {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+div[dusk$=-detail-component] h1 + div.ml-3.w-full.flex.items-center > div.ml-3 div.flex.items-center.mr-3 button.btn.btn-default.btn-primary.flex.items-center.justify-center.px-3 svg {
+  fill: #409AEE;
+}
+
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search {
+  background-color: #DEDEDE;
+}
+
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 {
+  background-color: #EEEEEE;
+  border-radius: 30px;
+}
+
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 > div.flex.border-b.border-40,
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 > div > div > div.flex.border-b.border-40 {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 > div.flex.border-b.border-40.remove-bottom-border,
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 > div > div > div.flex.border-b.border-40.remove-bottom-border {
+  border-bottom: none;
+}
+
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 > div.flex.border-b.border-40 > div.py-4,
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.py-4 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 > div.flex.border-b.border-40 > div.py-4.w-1\/4,
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.py-4.w-1\/4 {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 > div.flex.border-b.border-40 > div.py-4.w-3\/4,
+div[dusk$=-detail-component] .relationship-tabs-panel.card div[label].default-search > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.py-4.w-3\/4 {
+  padding-right: 30px;
+}
+
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 {
+  background-color: #EEEEEE;
+  border-radius: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 > div.flex.border-b.border-40,
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 > div > div > div.flex.border-b.border-40 {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 > div.flex.border-b.border-40.remove-bottom-border,
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 > div > div > div.flex.border-b.border-40.remove-bottom-border {
+  border-bottom: none;
+}
+
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 > div.flex.border-b.border-40 > div.py-4,
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 > div > div > div.flex.border-b.border-40 > div.py-4 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 > div.flex.border-b.border-40 > div.py-4.w-1\/4,
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 > div > div > div.flex.border-b.border-40 > div.py-4.w-1\/4 {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 > div.flex.border-b.border-40 > div.py-4.w-3\/4,
+div[dusk$=-detail-component] div.card.mb-6.py-3.px-6 > div > div > div.flex.border-b.border-40 > div.py-4.w-3\/4 {
+  padding-right: 30px;
+}
+
+.relationship-tabs-panel.card {
+  background-color: #DEDEDE;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.relationship-tabs-panel.card div.tabs-wrap {
+  background-color: #DEDEDE;
+  margin-bottom: 40px;
+  border: none;
+  font-weight: bold;
+  font-family: GoshaSans;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.relationship-tabs-panel.card div.tabs-wrap .tabs {
+  background-color: #EEEEEE;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.relationship-tabs-panel.card div.tabs-wrap .tabs .tab {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-top: 8px solid #EEEEEE;
+  border-bottom: 8px solid #EEEEEE;
+}
+
+.relationship-tabs-panel.card div.tabs-wrap .tabs .tab.active {
+  border-top: 8px solid #DCE7F0;
+  border-bottom: 8px solid #409AEE;
+  background-color: #DCE7F0;
+  color: #409AEE;
+}
+
+.relationship-tabs-panel .tabs::-webkit-scrollbar {
+  height: 0 !important;
+}
+
+form > div.mb-8 h1 + div.card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border {
+  background-color: #DEDEDE;
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) {
+  background-color: #EEEEEE;
+  border-radius: 30px;
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40.remove-bottom-border,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40.remove-bottom-border,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40.remove-bottom-border {
+  border-bottom: none;
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.px-8.py-6,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.px-8.py-6,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.px-8.py-6 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label {
+  color: #1F1F1F;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label span.text-danger.text-sm,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label span.text-danger.text-sm,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label span.text-danger.text-sm,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label span.text-danger.text-sm,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label span.text-danger.text-sm,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label span.text-danger.text-sm {
+  color: #409AEE;
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 h4:after,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 h4:after,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 h4:after,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 h4:after,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 h4:after,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 h4:after {
+  content: ":";
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 {
+  width: 100%;
+}
+
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div.flex.border-b.border-40 > div.py-6.px-8.w-1\/2,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div.flex.border-b.border-40 > div.py-6.px-8.w-1\/2,
+form > div.mb-8 > div.card > div.remove-bottom-border > div:not(.card) > div > div > div > div.flex.border-b.border-40 > div.py-6.px-8.w-1\/2 {
+  padding-right: 30px;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card,
+form > div.mb-8 .remove-bottom-border > div:not(.card) {
+  overflow: visible;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label],
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] {
+  background-color: #DEDEDE;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 {
+  background-color: #EEEEEE;
+  border-radius: 30px;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40.remove-bottom-border,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40.remove-bottom-border,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40.remove-bottom-border,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40.remove-bottom-border,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40.remove-bottom-border,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40.remove-bottom-border {
+  border-bottom: none;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.px-8.py-6,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.px-8.py-6,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.px-8.py-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.px-8.py-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.px-8.py-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.px-8.py-6 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label {
+  color: #1F1F1F;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label span.text-danger.text-sm,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label span.text-danger.text-sm,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label span.text-danger.text-sm,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label span.text-danger.text-sm,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label span.text-danger.text-sm,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label span.text-danger.text-sm,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label span.text-danger.text-sm,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label span.text-danger.text-sm,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label span.text-danger.text-sm,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label span.text-danger.text-sm,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 label span.text-danger.text-sm,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 label span.text-danger.text-sm {
+  color: #409AEE;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 h4:after,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 h4:after,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 h4:after,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 h4:after,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 h4:after,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 h4:after,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 h4:after,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 h4:after,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 h4:after,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 h4:after,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.py-6 h4:after,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 h4:after {
+  content: ":";
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.w-1\/5.px-8.pt-6 {
+  width: 100%;
+}
+
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.py-6.px-8.w-1\/2,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.py-6.px-8.w-1\/2,
+form > div.mb-8 .relationship-tabs-panel.card div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.py-6.px-8.w-1\/2,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div.flex.border-b.border-40 > div.py-6.px-8.w-1\/2,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div.flex.border-b.border-40 > div.py-6.px-8.w-1\/2,
+form > div.mb-8 .remove-bottom-border > div:not(.card) div[label] > div.px-6.py-3 > div > div > div.flex.border-b.border-40 > div.py-6.px-8.w-1\/2 {
+  padding-right: 30px;
+}
+
+.multiselect-readonly {
+  text-transform: lowercase;
+}
+
+.multiselect-readonly li {
+  margin-bottom: 10px;
+}
+
+.multiselect-readonly .grouped-list li:last-of-type {
+  margin-bottom: 20px;
+}
+
+.multiselect-readonly ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.multiselect-readonly .group-label {
+  font-size: 10px;
+  font-family: GoshaSans;
+  color: #A1A1A1;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.multiselect {
+  font-size: 16px;
+}
+
+.multiselect.multiselect--active .multiselect__tags {
+  border-color: #B6B6B6 !important;
+  background-color: #FFFFFF !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid #FFFFFF !important;
+}
+
+.multiselect.multiselect--active .multiselect__tags .multiselect__input {
+  background-color: #FFFFFF;
+}
+
+.multiselect.multiselect--active.multiselect--above .multiselect__tags {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom: 1px solid #B6B6B6 !important;
+}
+
+.multiselect .multiselect__tags {
+  background-color: #EEEEEE;
+  border-bottom-color: #B6B6B6;
+  border-left-color: #EEEEEE;
+  border-right-color: #EEEEEE;
+  border-top-color: #EEEEEE;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.multiselect .multiselect__tags .multiselect__single {
+  background-color: #EEEEEE;
+  padding-left: 0;
+  margin-left: -8px;
+  color: #1F1F1F;
+  text-transform: lowercase;
+}
+
+.multiselect .multiselect__tags .multiselect__placeholder {
+  display: none;
+}
+
+.multiselect .multiselect__tags .multiselect__input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.multiselect .multiselect__tags .multiselect__input:-moz-placeholder {
+  color: transparent;
+}
+
+.multiselect .multiselect__tags .multiselect__input::-moz-placeholder {
+  color: transparent;
+}
+
+.multiselect .multiselect__tags .multiselect__input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.multiselect .multiselect__tags .multiselect__tags-wrap .multiselect__tag {
+  padding: 7px 40px 7px 20px;
+  text-transform: lowercase;
+  border-radius: 30px;
+  background-color: #409AEE;
+  font-size: 16px;
+}
+
+.multiselect .multiselect__tags .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon {
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  height: 100%;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+}
+
+.multiselect .multiselect__tags .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon:hover {
+  background-color: initial;
+}
+
+.multiselect .multiselect__tags .multiselect__tags-wrap .multiselect__tag .multiselect__tag-icon:after {
+  color: #DCE7F0;
+  font-size: 16px;
+}
+
+.multiselect .multiselect__content-wrapper {
+  border-color: #B6B6B6;
+  border-top: 1px solid #B6B6B6 !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content li:not(.multiselect__element) span.multiselect__option {
+  text-transform: lowercase !important;
+  color: #1F1F1F !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content .multiselect__element {
+  background-color: #FFFFFF !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content .multiselect__element :hover {
+  background-color: #FFFFFF !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content .multiselect__element .multiselect__option {
+  text-transform: lowercase !important;
+  color: #1F1F1F !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content .multiselect__element .multiselect__option span {
+  text-transform: lowercase !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content .multiselect__element .multiselect__option.multiselect__option--selected {
+  background-color: #FFFFFF !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content .multiselect__element .multiselect__option.multiselect__option--highlight {
+  background-color: #DCE7F0 !important;
+  color: #1F1F1F !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content .multiselect__element .multiselect__option.multiselect__option--highlight :hover {
+  background-color: #DCE7F0 !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content .multiselect__element .multiselect__option.multiselect__option--group {
+  background-color: #FFFFFF !important;
+  font-size: 10px;
+  font-family: GoshaSans;
+  font-weight: bold;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content .multiselect__element .multiselect__option.multiselect__option--group span {
+  color: #A1A1A1;
+  text-transform: uppercase !important;
+}
+
+.multiselect .multiselect__content-wrapper .multiselect__content .multiselect__element .multiselect__option:after {
+  display: none !important;
+}
+
+.workflow-card {
+  padding: 15px 30px;
+  height: auto !important;
+}
+
+.workflow-card .top-wrapper .state {
+  font-family: GoshaSans;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1F1F1F;
+}
+
+.workflow-card .top-wrapper .date {
+  font-size: 12px;
+  color: #A1A1A1;
+  letter-spacing: 0.05em;
+}
+
+.workflow-card .user {
+  font-size: 14px;
+  color: #A1A1A1;
+}
+
+.workflow-card .notes {
+  font-size: 14px;
+  color: #1F1F1F;
+}
+
+.workflow-card button.btn.btn-default.transition:disabled {
+  min-width: initial;
+  border: 1px solid #A1A1A1;
+  background-color: #EEEEEE;
+  color: #A1A1A1;
+}
+
+.workflow-card button.btn.btn-default.transition:disabled:hover {
+  border: 1px solid #A1A1A1 !important;
+  background-color: #EEEEEE !important;
+  color: #A1A1A1 !important;
+}
+
+.workflow-card button.btn.btn-default.transition {
+  min-width: initial;
+  border: 1px solid #1F1F1F;
+  background-color: #EEEEEE;
+  color: #1F1F1F;
+}
+
+.workflow-card button.btn.btn-default.transition:hover {
+  border: 1px solid #409AEE;
+  background-color: #409AEE;
+  color: #FFFFFF;
+}
+
+.card.card-panel {
+  background-color: #EEEEEE;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 30px;
+}
+
+.card.card-panel div.rounded-lg.pin.z-50.bg-white {
+  background-color: #EEEEEE;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 30px;
+}
+
+.card.card-panel h3.mr-3.text-base.text-80.font-bold,
+.card.card-panel h3.flex.mb-3.text-base.text-80.font-bold {
+  color: #A1A1A1;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+
+.card.card-panel h3.mr-3.text-base.text-80.font-bold span.ml-auto.font-semibold.text-70.text-sm,
+.card.card-panel h3.flex.mb-3.text-base.text-80.font-bold span.ml-auto.font-semibold.text-70.text-sm {
+  display: none;
+}
+
+.card.card-panel div.vertical-center.rounded-b-lg.ct-chart.mr-4 {
+  right: 0 !important;
+  bottom: 0;
+}
+
+.card.card-panel h3.flex.mb-3.text-base.text-80.font-bold + div.overflow-hidden.overflow-y-auto.max-h-90px {
+  max-height: 70px;
+  width: calc(100% - 90px);
+}
+
+.card.card-panel p.flex.items-center.text-4xl.mb-4 {
+  font-family: GoshaSans;
+  font-weight: bold;
+  color: #1F1F1F;
+  font-size: 28px;
+}
+
+.card.card-panel p.flex.items-center.text-4xl.mb-4:after {
+  content: "\20BD";
+  margin-left: 10px;
+}
+
+.card.card-panel p.flex.items-center.text-4xl.mb-4 + div.flex.items-center {
+  display: none;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto {
+  background-color: rgba(31, 31, 31, 0.76);
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden {
+  width: 650px;
+  min-width: 650px;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden {
+  border-radius: 10px;
+  background-color: #EEEEEE;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden h2.border-b.border-40.py-8.px-8.text-90.font-normal.text-xl,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden h2.mb-6.text-90.font-normal.text-xl {
+  font-family: GoshaSans;
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  color: #409AEE !important;
+  padding-bottom: 0;
+  padding-top: 30px;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.p-8 > h2.mb-6.text-90.font-normal.text-xl {
+  padding-top: 0;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden h2.border-b.border-40.py-8.px-8.text-90.font-normal.text-xl + p.text-80.px-8.my-8,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden h2.mb-6.text-90.font-normal.text-xl + p.text-80.leading-normal {
+  color: #1F1F1F;
+  text-transform: lowercase;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.bg-30.px-6.py-3.flex {
+  background-color: #EEEEEE;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.bg-30.px-6.py-3.flex button[dusk=cancel-action-button].btn.btn-link.dim.cursor-pointer.text-80.ml-auto.mr-6,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.bg-30.px-6.py-3.flex button[dusk=cancel-delete-button].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.bg-30.px-6.py-3.flex button[data-testid=cancel-button].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link {
+  background-color: #EEEEEE;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.bg-30.px-6.py-3.flex button[dusk=cancel-action-button].btn.btn-link.dim.cursor-pointer.text-80.ml-auto.mr-6:hover,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.bg-30.px-6.py-3.flex button[dusk=cancel-delete-button].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link:hover,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.bg-30.px-6.py-3.flex button[data-testid=cancel-button].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link:hover {
+  background-color: #409AEE;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 {
+  border: none;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 div.w-1\/5.px-8.pt-6,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 div.w-1\/5.px-8.py-6 {
+  padding-top: 20px;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 div.w-1\/5.px-8.pt-6 label.inline-block.text-80.pt-2.leading-tight,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 div.w-1\/5.px-8.py-6 label.inline-block.text-80.pt-2.leading-tight {
+  color: #1F1F1F;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: GoshaSans;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  padding-top: 0;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 div.w-1\/5.px-8.pt-6 label.inline-block.text-80.pt-2.leading-tight span.text-danger.text-sm,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 div.w-1\/5.px-8.py-6 label.inline-block.text-80.pt-2.leading-tight span.text-danger.text-sm {
+  color: #409AEE;
+}
+
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 div.w-1\/5.px-8.pt-6 + div.py-6.px-8.w-1\/2,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 div.w-1\/5.px-8.pt-6 + div.py-6.px-8.w-full,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 div.w-1\/5.px-8.py-6 + div.py-6.px-8.w-1\/2,
+.modal.select-none.fixed.pin.z-50.overflow-x-hidden.overflow-y-auto form.bg-white.rounded-lg.shadow-lg.overflow-hidden div.action div.flex.border-b.border-40 div.w-1\/5.px-8.py-6 + div.py-6.px-8.w-full {
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+
+div.z-50.open div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg,
+div.overflow-hidden.absolute.rounded-lg.shadow-lg.w-full.mt-2.max-h-search.overflow-y-auto {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid #B6B6B6;
+  background-color: #FFFFFF;
+}
+
+div.z-50.open div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-xs.uppercase.tracking-wide.text-80.bg-40.py-2.px-3,
+div.overflow-hidden.absolute.rounded-lg.shadow-lg.w-full.mt-2.max-h-search.overflow-y-auto h3.text-xs.uppercase.tracking-wide.text-80.bg-40.py-2.px-3 {
+  font-size: 10px;
+  font-family: GoshaSans;
+  color: #A1A1A1;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  padding: 12px;
+}
+
+div.z-50.open div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg h3.text-xs.uppercase.tracking-wide.text-80.bg-40.py-4.px-3,
+div.overflow-hidden.absolute.rounded-lg.shadow-lg.w-full.mt-2.max-h-search.overflow-y-auto h3.text-xs.uppercase.tracking-wide.text-80.bg-40.py-4.px-3 {
+  text-transform: lowercase;
+  font-size: 16px;
+  color: #1F1F1F;
+  background-color: #FFFFFF;
+  padding: 12px;
+  min-height: 40px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  font-family: Roboto;
+}
+
+div.z-50.open div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg ul li a,
+div.overflow-hidden.absolute.rounded-lg.shadow-lg.w-full.mt-2.max-h-search.overflow-y-auto ul li a {
+  text-transform: lowercase;
+  font-size: 16px;
+  color: #1F1F1F;
+  background-color: #FFFFFF;
+  padding: 12px;
+  min-height: 40px;
+}
+
+div.z-50.open div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg ul li a:hover,
+div.overflow-hidden.absolute.rounded-lg.shadow-lg.w-full.mt-2.max-h-search.overflow-y-auto ul li a:hover {
+  background-color: #DCE7F0;
+}
+
+div.z-50.open div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg input[type=checkbox]:checked:after,
+div.overflow-hidden.absolute.rounded-lg.shadow-lg.w-full.mt-2.max-h-search.overflow-y-auto input[type=checkbox]:checked:after {
+  background: url("/storage/checked-white.svg") no-repeat;
+}
+
+div.z-50.open div.select-none.overflow-hidden.bg-white.border.border-60.shadow.rounded-lg input[type=checkbox]:not(:checked):after,
+div.overflow-hidden.absolute.rounded-lg.shadow-lg.w-full.mt-2.max-h-search.overflow-y-auto input[type=checkbox]:not(:checked):after {
+  background: url("/storage/unchecked-white.svg") no-repeat;
+}
+
+div.gallery div.gallery-item.gallery-item-file.mb-3.p-3.mr-3 {
+  background-color: #FFFFFF;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px;
+}
+
+div.gallery div.gallery-item.gallery-item-file.mb-3.p-3.mr-3 div.gallery-item-info {
+  background-color: #FFFFFF;
+}
+
+div.gallery div.gallery-item.gallery-item-file.mb-3.p-3.mr-3 div.gallery-item-info a.download.mr-2 svg {
+  fill: #656565;
+}
+
+div.gallery div.gallery-item.gallery-item-file.mb-3.p-3.mr-3 div.gallery-item-info a.delete.ml-2 svg {
+  fill: #656565;
+}
+
+div.gallery label.form-file-btn.btn.btn-default.btn-primary {
+  padding-top: 10px;
+  padding-bottom: 13px;
+  border-radius: 50px;
+  min-width: 150px;
+  text-align: center;
+  line-height: 100%;
+  height: auto;
+  text-transform: lowercase;
+  background-color: #409AEE;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  font-weight: normal;
+  border: 1px solid #409AEE;
+  color: #FFFFFF;
+  min-height: 41px;
+}
+
+div.gallery label.form-file-btn.btn.btn-default.btn-primary:hover {
+  background-color: #3887D0;
+  border: 1px solid #3887D0;
+}
+
+div.gallery .gallery-list .gallery-item.gallery-item-image {
+  background-color: #EEEEEE;
+  border: 1px solid #B6B6B6;
+  border-radius: 10px;
+}
+
+div.gallery .gallery-list .gallery-item.gallery-item-image:hover .gallery-item-info {
+  background-color: rgba(31, 31, 31, 0.3);
+  border-radius: 9px;
+}
+
+div.gallery .gallery-list .gallery-item.gallery-item-image:hover .gallery-item-info .icon.crop svg g path {
+  fill: white;
+}
+
+div.gallery .gallery-list .gallery-item.gallery-item-image:hover .gallery-item-info .icon.delete svg {
+  fill: white;
+}
+
+div.gallery .gallery-list .gallery-item.gallery-item-image:hover .gallery-item-info .icon.download svg {
+  fill: white;
+}
+
+div.gallery .gallery-list .gallery-item.gallery-item-image:hover .gallery-item-info .icon.edit svg {
+  fill: white;
+}
+
+div.gallery .gallery-list .gallery-item.gallery-item-image:hover .gallery-item-info .preview svg {
+  fill: white;
+}
+
+div.modal.modal-cropper {
+  background-color: rgba(31, 31, 31, 0.76);
+}
+
+div.modal.modal-cropper div.card.clipping-container {
+  border-radius: 10px;
+  border: none;
+  background-color: #EEEEEE;
+}
+
+div.modal.modal-cropper div.card.clipping-container > div.p-4 {
+  padding: 30px;
+}
+
+div.modal.modal-cropper div.card.clipping-container div.bg-30.px-6.py-3.footer.rounded-lg {
+  background-color: #EEEEEE;
+  padding-top: 0;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+div.modal.modal-cropper div.card.clipping-container div.bg-30.px-6.py-3.footer.rounded-lg input.input-range.ml-4.mr-4 {
+  display: none;
+}
+
+div.modal.modal-cropper div.card.clipping-container div.bg-30.px-6.py-3.footer.rounded-lg button.btn.btn-link.text-80.font-normal.h-9.px-3 {
+  padding-top: 10px;
+  padding-bottom: 13px;
+  border-radius: 50px;
+  min-width: 225px;
+  text-align: center;
+  line-height: 100%;
+  height: auto;
+  text-transform: lowercase;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  font-weight: normal;
+  border: 1px solid #1F1F1F;
+  background-color: #EEEEEE;
+  color: #1F1F1F;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+div.modal.modal-cropper div.card.clipping-container div.bg-30.px-6.py-3.footer.rounded-lg button.btn.btn-link.text-80.font-normal.h-9.px-3:hover {
+  background-color: #409AEE;
+  border: 1px solid #409AEE;
+  color: white;
+  opacity: 1;
+}
+
+.trumbowyg-box.trumbowyg-editor-visible.trumbowyg {
+  background-color: white;
+}
+
+.trumbowyg-box.trumbowyg-editor-visible.trumbowyg div.trumbowyg-button-pane {
+  background-color: #EDEDED;
+  z-index: 0;
+}
+
+.trumbowyg-details .markdown.leading-normal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #B6B6B6;
+}
+
+.trumbowyg-details .markdown.leading-normal > a.cursor-pointer.dim.inline-block.text-primary.font-bold.mt-6 {
+  margin-top: 20px;
+}
+
+.settings .field-label {
+  color: #1F1F1F;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.settings .field-label:after {
+  content: ":";
+}
+
+.settings .field-label.first {
+  padding-top: 0px;
+}
+
+.settings .field-label.for-mini-tabs {
+  padding-top: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.settings .field-label.for-mini-tabs-first {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.settings .field-label.inline-block {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.settings label.custom-check-box {
+  color: #1F1F1F;
+  text-transform: none !important;
+  font-family: Roboto !important;
+  font-weight: normal !important;
+  cursor: pointer;
+}
+
+.settings .copy-paste-button {
+  color: #A1A1A1;
+  text-decoration: none;
+}
+
+.settings .copy-paste-button:hover {
+  color: #409AEE;
+  text-decoration: none;
+}
+
+.settings .empty-tab-list {
+  padding-top: 10px;
+}
+
+.settings .mini-tab {
+  display: inline-block;
+  background-color: initial;
+  color: #A1A1A1;
+  padding: 0;
+  font-family: "GoshaSans";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  min-height: initial;
+  border-bottom: 2px solid #EEEEEE;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.settings .mini-tab.active {
+  background-color: initial;
+  color: #409AEE;
+  border-bottom: 2px solid #409AEE;
+}
+
+.settings .table-top {
+  border-bottom: 1px solid #B6B6B6;
+}
+
+.settings .table-top .table-header {
+  font-family: GoshaSans;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1F1F1F;
+  text-align: center;
+}
+
+.settings .badge {
+  text-transform: lowercase;
+  border: 1px solid #A1A1A1;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.settings .tab-name {
+  width: calc(100% - 100px);
+}
+
+.settings .tab-name input {
+  background-color: #FAFAFA;
+}
+
+.settings .tab-top {
+  border: 1px solid #B6B6B6;
+  border-radius: 20px;
+  background-color: #FAFAFA;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.settings .tab-top input.custom-input {
+  background-color: #FAFAFA;
+}
+
+.settings .tab-top .multiselect .multiselect__tags {
+  background-color: #FAFAFA;
+  border-left-color: #FAFAFA;
+  border-right-color: #FAFAFA;
+  border-top-color: #FAFAFA;
+}
+
+.settings .tab-top .multiselect .multiselect__tags .multiselect__single {
+  background-color: #FAFAFA;
+}
+
+.settings .tab-top.transition {
+  padding: 2rem;
+}
+
+.settings .tab-top.operation {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 22px;
+  padding-bottom: 10px;
+}
+
+.settings .tab-top.link {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 22px;
+  padding-bottom: 0;
+}
+
+.settings .collapse-button {
+  width: 20px;
+  text-align: center;
+}
+
+.settings .paginator-label {
+  color: #656565;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+
+.pill-filter .pill {
+  text-transform: lowercase;
+  border: 1px solid #A1A1A1;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #1F1F1F;
+  cursor: pointer;
+}
+
+.pill-filter .pill.active {
+  border: 1px solid #409AEE;
+  background-color: #409AEE;
+  color: #FFFFFF;
+}
+
+.pill-filter .expand-collapse {
+  font-size: 12px;
+  color: #A1A1A1;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+
+.pill-filter .expand-collapse:hover {
+  color: #409AEE;
+  text-decoration: none;
+}
+
+.pac-container {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #B6B6B6;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pac-container:after {
+  display: none;
+}
+
+.pac-container .pac-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pac-container .pac-item:hover {
+  background-color: #DCE7F0;
+}
+
+.pac-container .pac-item:first-of-type {
+  border-top: none;
+}
+
+.login {
+  background-color: #DEDEDE;
+}
+
+.login .login-form {
+  width: 585px;
+  max-width: 585px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #DEDEDE;
+}
+
+.login .login-form input[type=checkbox]:checked:after {
+  background: url("/storage/checked-dark.svg") no-repeat;
+}
+
+.login .login-form input[type=checkbox]:not(:checked):after {
+  background: url("/storage/unchecked-dark.svg") no-repeat;
+}
+
+.login .login-form .custom-input {
+  background-color: #DEDEDE;
+  font-family: GoshaSans;
+  font-size: 18px;
+  border-color: #1F1F1F;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: normal;
+}
+
+.login .login-form .custom-input::-webkit-input-placeholder {
+  color: #656565;
+  text-transform: lowercase;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.login .login-form .custom-input:-moz-placeholder {
+  color: #656565;
+  text-transform: lowercase;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.login .login-form .custom-input::-moz-placeholder {
+  color: #656565;
+  text-transform: lowercase;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.login .login-form .custom-input:-ms-input-placeholder {
+  color: #656565;
+  text-transform: lowercase;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.login .login-form .custom-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #DEDEDE inset !important;
+}
+
+.login .login-form .has-error .custom-input {
+  border-color: red;
+}
+
+.login .login-form .forget-password-link {
+  display: none;
+  font-family: GoshaSans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  color: #409AEE;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.login .login-form .forget-password-link:hover {
+  color: #3887D0;
+  text-decoration: none;
+}
+
+.login .login-form .remember-me {
+  font-family: GoshaSans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.065em;
+  text-transform: lowercase;
+  color: #409AEE;
+}
+
+.login .login-form .login-button {
+  font-family: GoshaSans;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.185em;
+  padding-top: 8px;
+  width: 100%;
+}
+
+.login .login-decoration {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 585px);
+  background: linear-gradient(350.4deg, #1F1F1F 9.69%, #282828 97.69%);
+  border-top-left-radius: 40px;
+}
+
+.login .login-decoration .rect {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  bottom: -70px;
+  left: -420px;
+  opacity: 0.4;
+}
+
+.login .login-decoration .circle {
+  position: absolute;
+  top: -50px;
+  left: 100px;
+  opacity: 0.4;
+}
+
+.login .login-decoration .logo {
+  position: absolute;
+  left: 150px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 75px;
+}
+
+.trix-details .markdown.leading-normal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #B6B6B6;
+}
+
+.trix-details .markdown.leading-normal figure {
+  text-decoration: none;
+}
+
+.trix-details .markdown.leading-normal figure a {
+  text-decoration: none;
+}
+
+.trix-details .markdown.leading-normal figure figcaption {
+  color: #409AEE;
+  font-weight: 800;
+}
+
+.trix-form trix-toolbar .trix-button-group {
+  border-radius: 5px;
+  border-bottom-color: #B6B6B6;
+  border-color: #B6B6B6;
+  overflow: hidden;
+}
+
+.trix-form trix-toolbar .trix-button-group .trix-button {
+  border: none;
+  color: black;
+}
+
+.trix-form trix-toolbar .trix-button-group .trix-button.trix-active {
+  background-color: #DCE7F0;
+}
+
+.trix-form trix-editor {
+  background-color: white;
+  padding: 20px;
+}
+
+.trix-details a.cursor-pointer.dim.inline-block.text-primary.font-bold.mt-6 {
+  margin-top: 20px;
+}
+
+div.color-input + input:focus {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: #B6B6B6;
+}
+
+div.color-input {
+  border-color: #B6B6B6;
+}
+
+div.vc-compact:focus,
+div.vc-compact:active {
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.16) !important;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12), 0 2px 5px rgba(0, 0, 0, 0.16) !important;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+*::-webkit-search-cancel-button {
+  display: none;
+}
+
+*::-ms-clear {
+  margin-right: 20px;
+}
+
+.tooltip {
+  display: none !important;
+}
+
+.help-text.help-text {
+  margin-top: 0 !important;
+}
+
+.checkbox[disabled] {
+  background-color: var(--40);
+}
+
+.checkbox:checked[disabled] {
+  border-color: var(--60);
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 16 16' fill='%23bbb' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3E%3C/svg%3E");
+}
+
+html {
+  background: linear-gradient(350.4deg, #1F1F1F 9.69%, #282828 97.69%);
+}
+
+body .main-container {
+  background: linear-gradient(350.4deg, #1F1F1F 9.69%, #282828 97.69%);
+}
+
+/************************* Global colors **************************/
+
+:root {
+  --transparent: transparent;
+  --black: #1F1F1F;
+  --white: white;
+  --white-50: rgba(255, 255, 255, 0.5);
+  --danger: #e74444;
+  --success: #21b978;
+  --warning: #ffeb3b;
+  --info: #03a9f4;
+  --primary: #409AEE;
+  --primary-dark: #297ec0;
+  --primary-70: rgba(64, 153, 222, 0.7);
+  --primary-50: rgba(64, 153, 222, 0.5);
+  --primary-30: rgba(64, 153, 222, 0.3);
+  --primary-10: rgba(64, 153, 222, 0.1);
+  --logo: #252d37;
+  --sidebar-icon: #b3c1d1;
+  /*
+  --20: #f6fbff;
+  --30: #f4f7fa;
+  --40: #eef1f4;
+  --50: #e3e7eb;
+  --60: #bacad6;
+  --70: #b3b9bf;
+  --80: #7c858e;
+  --90: #252d37;
+  --90-half: rgba(40, 54, 61, 0.5);*/
+}
+

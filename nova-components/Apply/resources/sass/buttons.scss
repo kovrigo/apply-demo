@@ -1,0 +1,327 @@
+a.btn.btn-default, button.btn.btn-default  {
+    padding-top: 10px;
+    padding-bottom: 13px;
+    border-radius: 50px;
+    min-width: 225px;
+    text-align: center;
+    line-height: 100%;
+    height: auto;
+    text-transform: lowercase;
+    background-color: $blue;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: normal;
+    border: 1px solid $blue;
+    color: $white;
+    min-height: 41px;
+
+    &:hover {
+        background-color: $blue-dark!important;
+        border: 1px solid $blue-dark!important;
+    }
+
+    span {
+        margin-left: auto;
+        margin-right: auto;        
+    }
+
+}
+
+a:not(.btn):hover {
+    color: $blue-dark;
+    opacity: 1!important;
+}
+
+// Create/Attach button
+a.btn.btn-default.btn-primary[dusk="create-button"], a.btn.btn-default.btn-primary[dusk="attach-button"] {
+    border: 1px solid $black;
+    background-color: $light-gray;
+    color: $black;
+
+    &:hover {
+        background-color: $blue;
+        border: 1px solid $blue;
+        color: white;
+    }
+
+}
+
+// Hide create and attach buttons in empty search
+a.btn.btn-sm.btn-outline.inline-flex.items-center[dusk="create-button"],
+    a.btn.btn-sm.btn-outline.inline-flex.items-center[dusk="attach-button"] {
+    display: none;
+}
+
+// Edit resource (icon only)
+a.btn.btn-default.btn-icon.bg-primary[data-testid="edit-resource"] {
+    position: relative;
+    min-width: initial;
+    background: none;
+    border: none;
+    opacity: 1!important;
+
+    svg {
+        display: none;
+    }
+    
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background: url("/storage/edit-light.svg") no-repeat;
+    }           
+    
+    &:hover:after {
+        background: url("/storage/edit.svg") no-repeat;
+        opacity: 1!important;
+    }
+
+    &:hover {
+        background-color: initial!important;
+        border: none!important;    
+    }
+
+}
+
+// Remove resource (icon only)
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk="open-delete-modal-button"] {
+    position: relative;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0 0 0 17px;
+    opacity: 1!important;
+    min-width: initial;
+
+    svg {
+        display: none;
+    }
+    
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        left: 0;
+        width: 17px;
+        height: 18px;
+        background: url("/storage/remove-light.svg") no-repeat;
+    }           
+    
+    &:hover:after {
+        background: url("/storage/remove.svg") no-repeat;
+        border: none!important;
+        opacity: 1!important;
+    }
+
+    &:hover {
+        background-color: initial!important;
+        border: none!important;    
+    }
+
+}
+
+// Restore/force delete resource (icon only)
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk="open-restore-modal-button"],
+    button.btn.btn-default.btn-icon.btn-white.mr-3[dusk="open-force-delete-modal-button"] {
+    background: none;
+    border: none;
+    min-width: initial;
+    margin: 0;
+    padding: 0 10px 0 0;
+
+    svg {
+        color: $dark-gray;
+    }    
+    
+    &:hover {
+        background: none!important;
+        border: none!important;
+        
+        svg {
+            color: $text-gray;
+            opacity: 1;
+        }
+        
+    }
+    
+}
+
+button.btn.btn-default.btn-icon.btn-white.mr-3[dusk="open-force-delete-modal-button"] {
+    margin-right: 4px;
+}
+
+// Cancel
+a.btn.btn-link.dim.cursor-pointer.text-80.ml-auto.mr-6, 
+button[dusk='cancel-action-button'].btn.btn-link.dim.cursor-pointer.text-80.ml-auto.mr-6,
+button[dusk='cancel-delete-button'].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link,
+button[data-testid='cancel-button'].btn.text-80.font-normal.h-9.px-3.mr-3.btn-link {
+    padding-top: 10px;
+    padding-bottom: 13px;
+    border-radius: 50px;
+    min-width: 225px;
+    text-align: center;
+    line-height: 100%;
+    height: auto;
+    text-transform: lowercase;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: normal;
+    border: 1px solid $black;
+    background-color: $light-gray;
+    color: $black;
+
+    &:hover {
+        background-color: $blue!important;
+        border: 1px solid $blue!important;
+        color: white;
+        opacity: 1;
+    }
+
+}
+
+// Disabled button
+button:disabled {
+    opacity: 1!important;
+}
+
+// Input (Text and Number)
+.custom-input {
+    border-bottom: 1px solid $gray;
+    background-color: $lightest-gray;
+    height: 2.25rem;
+}
+
+// Textarea
+.custom-textarea {
+    background-color: $lightest-gray;
+    border: 1px solid $gray;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    resize: none;    
+}
+
+// Number +/- buttons
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+// Checkbox
+input[type=checkbox] {
+    position: relative;
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 22px;
+    height: 22px;
+    background: url("/storage/checked.svg") no-repeat;
+    cursor: pointer;
+}
+
+input[type=checkbox]:not(:checked):after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 22px;
+    height: 22px;
+    background: url("/storage/unchecked.svg") no-repeat;
+    cursor: pointer;
+}
+
+input[type=checkbox]:active {
+    box-shadow:none!important;
+}
+
+// Password
+input[type=password], input[type=password]:active, input[type=password]:focus {
+    border-bottom: 1px solid $gray;
+    background-color: $lightest-gray;
+    height: 2.25rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    color: $black;
+    padding-left: 0;
+    padding-right: 0;    
+
+    @include placeholder {
+        color: transparent;
+    }
+
+}
+
+// Mini tab
+.mini-tab {
+    font-family: GoshaSans;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $dark-gray;
+
+    &.active {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+    }
+
+}
+
+.mini-tab-content {
+
+    .label {
+        font-size: 13px;
+        letter-spacing: 0.05em;
+        text-transform: lowercase;
+        color: $dark-gray;
+        margin-bottom: 10px;
+    }
+
+    .separator {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: $black;
+    }
+
+}
+
+// Error text
+div.help-text.error-text.mt-2.text-danger {
+    font-style: normal;
+}
+
+// Date & DateTime
+input.flatpickr-input, input.flatpickr-input.active, input.flatpickr-input:focus {
+    border-bottom: 1px solid $gray;
+    background-color: $lightest-gray;
+    height: 2.25rem;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: $black;
+    padding: initial;
+}
+

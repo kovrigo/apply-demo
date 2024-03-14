@@ -1,0 +1,202 @@
+.multiselect-readonly {
+    text-transform: lowercase;
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    .grouped-list {
+
+        li:last-of-type {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    ul {
+      padding-inline-start: 0px;
+    }
+
+    .group-label {
+        font-size: 10px;
+        font-family: GoshaSans;
+        color: $dark-gray;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }    
+
+}
+
+.multiselect {
+    font-size: 16px;
+}
+
+.multiselect {
+
+    // With opened dropdown
+    &.multiselect--active {
+
+        .multiselect__tags {
+            border-color: $gray!important;;
+            background-color: $white!important;;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom: 1px solid $white!important;
+            
+            .multiselect__input {
+                background-color: $white;
+            }
+
+        }
+
+        &.multiselect--above .multiselect__tags {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;            
+            border-bottom: 1px solid $gray!important;
+        }
+
+    }
+
+
+    // Tags & input
+    .multiselect__tags {
+        // Hide borders and change background without dropdown
+        background-color: $lightest-gray;
+        border-bottom-color: $gray;
+        border-left-color: $lightest-gray;
+        border-right-color: $lightest-gray;
+        border-top-color: $lightest-gray;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        // Single select
+        .multiselect__single {
+            background-color: $lightest-gray;
+            padding-left: 0;
+            margin-left: -8px;
+            color: $black;
+            text-transform: lowercase;
+        }
+
+        // Placeholder when nothing selected
+        .multiselect__placeholder {
+            display: none;
+        }
+
+        // Input
+        .multiselect__input {
+            @include placeholder {
+                color: transparent;
+            }
+        }
+
+        // Selected tags
+        .multiselect__tags-wrap {
+
+            .multiselect__tag {
+                padding: 7px 40px 7px 20px;
+                text-transform: lowercase;
+                border-radius: 30px;
+                background-color: $blue;
+                font-size: 16px;
+                
+                .multiselect__tag-icon {
+                    top: 50%;
+                    transform: translatey(-50%);
+                    height: 100%;
+                    border-radius: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    
+                    &:hover {
+                        background-color: initial;
+                    }
+                    
+                    &:after {
+                        color: $light-blue;
+                        font-size: 16px;
+                    }
+                    
+                }
+
+            }
+
+        }
+        
+    }
+
+    // Dropdown
+    .multiselect__content-wrapper {
+        border-color: $gray;
+        border-top: 1px solid $gray!important;
+
+        .multiselect__content {
+
+            // Not found
+            li:not(.multiselect__element) span.multiselect__option {
+                text-transform: lowercase!important;
+                color: $black!important;
+            }
+
+            // Option
+            .multiselect__element {
+                background-color: $white!important;
+                :hover {
+                    background-color: $white!important;
+                }
+
+                .multiselect__option {
+                    text-transform: lowercase!important;
+                    color: $black!important;
+
+                    span {
+                        text-transform: lowercase!important;
+                    }                    
+
+                    // Selected option
+                    &.multiselect__option--selected {
+                        background-color: $white!important;
+                    }
+
+                    // Hover
+                    &.multiselect__option--highlight {
+                        background-color: $light-blue!important;
+                        color: $black!important;
+                        :hover {
+                            background-color: $light-blue!important;
+                        }
+                    }
+
+                    // Group
+                    &.multiselect__option--group {
+                        background-color: $white!important;
+                        font-size: 10px;
+                        font-family: GoshaSans;
+                        font-weight: bold;
+
+                        span {
+                            color: $dark-gray;
+                            text-transform: uppercase!important;   
+                        }
+
+                    }
+
+                    &:after {
+                        display: none!important;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+

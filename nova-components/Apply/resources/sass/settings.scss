@@ -1,0 +1,174 @@
+.settings {
+
+    .field-label {
+        color: $black;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 5px;        
+
+        &:after {
+            content: ':';
+        }
+
+        &.first {
+            padding-top: 0px;
+        }
+
+        &.for-mini-tabs {
+            padding-top: 5px;
+            margin-bottom: 20px;
+            padding-bottom: 0;
+        }
+
+        &.for-mini-tabs-first {
+            margin-bottom: 20px;
+            padding-bottom: 0;
+        }
+
+        &.inline-block {
+            padding: 0;
+            margin: 0;
+            padding-top: 10px;
+        }
+
+    }
+
+    label.custom-check-box {
+        color: $black;
+        text-transform: none!important;
+        font-family: Roboto!important;
+        font-weight: normal!important;
+        cursor: pointer;
+    }
+
+    .copy-paste-button {
+        color: $dark-gray;
+        text-decoration: none;
+
+        &:hover {
+            color: $blue;
+            text-decoration: none;
+        }
+
+    }
+
+    .empty-tab-list {
+        padding-top: 10px;
+    }
+
+    .mini-tab {
+        display: inline-block;
+        background-color: initial;
+        color: $dark-gray;
+        padding: 0;
+        font-family: 'GoshaSans';
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.05em;   
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 0;
+        min-height: initial;
+        border-bottom: 2px solid $lightest-gray;
+        cursor: pointer;
+        position: relative;
+        box-sizing: border-box;
+
+        &.active {
+            background-color: initial;
+            color: $blue;
+            border-bottom: 2px solid $blue;
+        }
+        
+    }
+
+    .table-top {
+        border-bottom: 1px solid $gray;
+
+        .table-header {
+            font-family: GoshaSans;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #1F1F1F;
+            text-align: center;
+        }
+
+    }
+
+    .badge {
+        text-transform: lowercase;
+        border: 1px solid $dark-gray;
+        border-radius: 30px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        text-align: center;        
+    }
+
+    .tab-name {
+        width: calc(100% - 100px);
+
+        input {
+            background-color: #FAFAFA;
+        }
+
+    }
+
+    .tab-top {
+        border: 1px solid $gray;
+        border-radius: 20px;
+        background-color: #FAFAFA;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        input.custom-input {
+            background-color: #FAFAFA;
+        }
+
+        .multiselect .multiselect__tags {
+            background-color: #FAFAFA;
+            border-left-color: #FAFAFA;
+            border-right-color: #FAFAFA;
+            border-top-color: #FAFAFA;
+
+            .multiselect__single {
+                background-color: #FAFAFA;
+            }
+
+        }
+
+        &.transition {
+            padding: 2rem;
+        }
+
+        &.operation {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 22px;
+            padding-bottom: 10px;
+        }
+
+        &.link {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 22px;
+            padding-bottom: 0;
+        }
+
+    }
+
+    .collapse-button {
+        width: 20px;
+        text-align: center;
+    }
+
+    .paginator-label {
+        color: #656565;
+        font-size: 13px;
+        letter-spacing: 0.05em;        
+    }
+
+}

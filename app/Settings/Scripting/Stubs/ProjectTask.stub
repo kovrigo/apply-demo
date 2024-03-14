@@ -1,0 +1,18 @@
+
+Eloquent('ProjectTask', function (modelClass) {
+
+    return class extends modelClass {
+
+        static endpoint = "<endpoint>";
+        static scopes = [<scopes>];
+        static dates = [<dates>];
+
+        static reorder(ids) {
+            return (new this).connection.sendRequest(this.id + '/reorder?ids=' + ids.join(','), 'get');
+        }
+
+    };
+
+});
+<globalObject> = Eloquent.ProjectTask;
+

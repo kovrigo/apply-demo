@@ -1,0 +1,77 @@
+@mixin detail-form-field-styles {
+
+	// Field
+	> div.flex.border-b.border-40, > div > div > div.flex.border-b.border-40 {
+		border-bottom: 1px solid $light-gray;
+
+		// Last row
+		&.remove-bottom-border {
+			border-bottom: none;
+		}
+
+		// Label and value
+		> div.py-4 {
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+
+		// Label
+		> div.py-4.w-1\/4 {
+			padding-left: 30px;
+			padding-right: 10px;
+
+			h4:after {
+				//content: ":";
+			}
+
+		}
+
+		// Value
+		> div.py-4.w-3\/4 {
+			padding-right: 30px;
+		}
+
+	}
+
+}
+
+div[dusk$="-detail-component"] {
+
+	// Hide actions
+	h1 + div.ml-3.w-full.flex.items-center {
+		> div.ml-3 {
+
+			@include action-styles;
+
+		}
+	}
+
+	// Tab content
+	.relationship-tabs-panel.card {
+
+		div[label].default-search {
+			background-color: $light-gray;
+
+			> div.px-6.py-3 {
+				background-color: $lightest-gray;
+				border-radius: 30px;
+
+				@include detail-form-field-styles;
+
+			}
+
+		}
+
+	}
+
+	// Content without tabs
+	div.card.mb-6.py-3.px-6 {
+		background-color: $lightest-gray;
+		border-radius: 30px;
+		box-shadow: none;
+
+		@include detail-form-field-styles;
+
+	}
+
+}

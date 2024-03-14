@@ -1,0 +1,9 @@
+{
+  "novaSortable.reorderingDisabledTooltip": "Изменение порядка записей возможно только с отключенной сортировкой.",
+  "novaSortable.moveToStart": "Переместить в начало",
+  "novaSortable.moveToEnd": "Переместить в конец",
+  "novaSortable.reorderSuccessful": "Порядок записей изменен.",
+  "novaSortable.moveToStartSuccessful": "Запись перемещена в начало.",
+  "novaSortable.moveToEndSuccessful": "Запись перемещена в конец.",
+  "novaSortable.reorderError": "An error occurred while trying to reorder the resource."
+}

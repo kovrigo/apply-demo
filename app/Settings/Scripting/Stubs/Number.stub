@@ -1,0 +1,13 @@
+
+Eloquent('Number', function (modelClass) {
+
+    return class extends modelClass {
+
+        static endpoint = "<endpoint>";
+        static scopes = [<scopes>];
+        static dates = [<dates>];
+
+    };
+
+});
+

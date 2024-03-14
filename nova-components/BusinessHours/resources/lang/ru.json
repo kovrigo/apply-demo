@@ -1,0 +1,28 @@
+{
+  "businessHours.days.monday": "Понедельник",
+  "businessHours.days.tuesday": "Вторник",
+  "businessHours.days.wednesday": "Среда",
+  "businessHours.days.thursday": "Четверг",
+  "businessHours.days.friday": "Пятница",
+  "businessHours.days.saturday": "Суббота",
+  "businessHours.days.sunday": "Воскресенье",
+
+  "businessHours.switchOpen": "Открыто",
+  "businessHours.switchClosed": "Закрыто",
+  "businessHours.placeholderOpens": "Открытие",
+  "businessHours.placeholderCloses": "Закрытие",
+  "businessHours.addHours": "Добавить",
+
+  "businessHours.open.invalidInput": "Пожалуйста, введите время открытия в 12-часовом формате (например, 08:00 AM) или \"24 часа\".",
+  "businessHours.open.greaterThanNext": "Время открытия должно быть меньше времени закрытия.",
+  "businessHours.open.lessThanPrevious": "Периоды работы не должны перескаться.",
+  "businessHours.open.midnightNotLast": "Значение \"Полночь\" можно выбрать только в последнем поле Время закрытия.",
+
+  "businessHours.close.invalidInput": "Пожалуйста, введите время закрытия в 12-часовом формате (например, 05:00 PM) или укажите одно из значений - \"24 часа\" или \"Полночь\".",
+  "businessHours.close.greaterThanNext": "Время закрытия должно быть меньше времени открытия.",
+  "businessHours.close.lessThanPrevious": "Периоды работы не должны перескаться.",
+  "businessHours.close.midnightNotLast": "Значение \"Полночь\" можно выбрать только в последнем поле Время закрытия.",
+
+  "businessHours.t24hours": "24 hours",
+  "businessHours.midnight": "Полночь"
+}

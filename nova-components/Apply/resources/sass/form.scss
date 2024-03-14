@@ -1,0 +1,99 @@
+@mixin form-fields-styles {
+
+	// Field
+	> div.flex.border-b.border-40, 
+	> div > div.flex.border-b.border-40,
+	> div > div > div.flex.border-b.border-40 {
+		border-bottom: 1px solid $light-gray;
+
+		// Last row
+		&.remove-bottom-border {
+			border-bottom: none;
+		}
+
+		// Label and value
+		> div.px-8.py-6 {
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+
+		// Label
+		> div.w-1\/5.px-8.py-6, > div.w-1\/5.px-8.pt-6 {
+			padding-left: 30px;
+			padding-right: 10px;
+
+			label {
+				color: $black;
+				text-transform: uppercase;
+				font-weight: bold;
+
+				// Required
+				span.text-danger.text-sm {
+					color: $blue;
+				}
+
+			}
+
+			h4:after {
+				content: ":";
+			}
+
+		}
+
+		// Label for stacked field
+		> div.w-1\/5.px-8.pt-6 {
+			width: 100%;
+		}
+
+		// Value
+		> div.py-6.px-8.w-1\/2 {
+			padding-right: 30px;
+		}
+
+	}
+
+}
+
+form > div.mb-8 {
+
+	h1 + div.card {
+		box-shadow: none;
+	}
+
+	> div.card > div.remove-bottom-border {
+		background-color: $light-gray;
+
+		> div:not(.card) {
+			background-color: $lightest-gray;
+			border-radius: 30px;	
+
+			> div {
+
+				@include form-fields-styles;
+
+			}
+
+		}
+
+	}	
+
+	.relationship-tabs-panel.card, .remove-bottom-border > div:not(.card) {
+		overflow: visible;
+
+		// Tab content
+		div[label] {
+			background-color: $light-gray;
+
+			> div.px-6.py-3 {
+				background-color: $lightest-gray;
+				border-radius: 30px;
+
+				@include form-fields-styles;
+				
+			}
+
+		}
+
+	}
+
+}
